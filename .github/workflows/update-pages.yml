@@ -14,15 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
           python-version: '3.x'
-      - name: Generate index
-        run: python scripts/generate_index.py
-      - name: Commit and push
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: 'Update ontologies index [skip ci]'
-          branch: ${{ github.ref }}
-          file_pattern: docs/ontologies.json
+      - name: Build site
+        run: echo "Updating GitHub Pages without regenerating index"
 
