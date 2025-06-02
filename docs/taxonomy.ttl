@@ -1,6 +1,25 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-# Placeholder taxonomy that can be expanded as ontologies are added.
+<http://example.org/taxonomy#OntologyTypes> a skos:ConceptScheme ;
+    skos:prefLabel "Ontology File Types" .
 
-<http://example.org/taxonomy> a skos:ConceptScheme ;
-    skos:prefLabel "Ontology Topics" .
+<http://example.org/taxonomy#owl> a skos:Concept ;
+    skos:prefLabel "owl" ;
+    skos:inScheme <http://example.org/taxonomy#OntologyTypes> .
+
+<http://example.org/taxonomy#rdf> a skos:Concept ;
+    skos:prefLabel "rdf" ;
+    skos:inScheme <http://example.org/taxonomy#OntologyTypes> .
+
+<http://example.org/taxonomy#ttl> a skos:Concept ;
+    skos:prefLabel "ttl" ;
+    skos:inScheme <http://example.org/taxonomy#OntologyTypes> .
+
+<http://example.org/taxonomy#txt> a skos:Concept ;
+    skos:prefLabel "txt" ;
+    skos:inScheme <http://example.org/taxonomy#OntologyTypes> .
+
+<http://example.org/taxonomy#xml> a skos:Concept ;
+    skos:prefLabel "xml" ;
+    skos:inScheme <http://example.org/taxonomy#OntologyTypes> .
+
