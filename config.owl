@@ -1,0 +1,1062 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.cdlflex.org/config.owl#"
+     xml:base="http://www.cdlflex.org/config.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.cdlflex.org/config.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.cdlflex.org/config.owl#has">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has been defined as a composition relation.</rdfs:comment>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cdlflex.org/config.owl#Abstract_DataSourceField"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cdlflex.org/config.owl#DataSourceConfig"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#hasDataRecordDataFieldComposition -->
+
+    <owl:ObjectProperty rdf:about="http://www.cdlflex.org/config.owl#hasDataRecordDataFieldComposition">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has been defined as a composition relation.</rdfs:comment>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cdlflex.org/config.owl#DataField"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cdlflex.org/config.owl#DataRecord"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#syncInfo -->
+
+    <owl:ObjectProperty rdf:about="http://www.cdlflex.org/config.owl#syncInfo">
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cdlflex.org/config.owl#SyncRecord"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cdlflex.org/config.owl#DataSourceConfig"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#Abstract_DataSourceFieldConceptAttributeName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#Abstract_DataSourceFieldConceptAttributeName">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#Abstract_DataSourceField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#Abstract_DataSourceFieldDefaultValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#Abstract_DataSourceFieldDefaultValue">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#Abstract_DataSourceField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#Abstract_DataSourceFieldId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#Abstract_DataSourceFieldId">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#Abstract_DataSourceField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#Abstract_DataSourceFieldIsHiddenEntry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#Abstract_DataSourceFieldIsHiddenEntry">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#Abstract_DataSourceField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#Abstract_DataSourceFieldName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#Abstract_DataSourceFieldName">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#Abstract_DataSourceField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#Abstract_DataSourceFieldPos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#Abstract_DataSourceFieldPos">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#Abstract_DataSourceField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#AggregatedReferenceFieldDelimiter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#AggregatedReferenceFieldDelimiter">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#AggregatedReferenceField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataFieldContent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#DataFieldContent">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#DataField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataFieldId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#DataFieldId">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#DataField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataFieldType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#DataFieldType">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#DataField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataRecordId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#DataRecordId">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#DataRecord"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataSourceConfigApiKey -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#DataSourceConfigApiKey">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfig"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataSourceConfigConnectorType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#DataSourceConfigConnectorType">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfig"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataSourceConfigDeactivated -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#DataSourceConfigDeactivated">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfig"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataSourceConfigDownstream -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#DataSourceConfigDownstream">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfig"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataSourceConfigEndRow -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#DataSourceConfigEndRow">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfig"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataSourceConfigId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#DataSourceConfigId">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfig"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataSourceConfigMainConcept -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#DataSourceConfigMainConcept">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfig"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataSourceConfigName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#DataSourceConfigName">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfig"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataSourceConfigOriginArea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#DataSourceConfigOriginArea">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfig"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataSourceConfigPassword -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#DataSourceConfigPassword">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfig"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataSourceConfigRemote -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#DataSourceConfigRemote">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfig"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataSourceConfigSpreadsheetNo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#DataSourceConfigSpreadsheetNo">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfig"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataSourceConfigStartRow -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#DataSourceConfigStartRow">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfig"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataSourceConfigUpstream -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#DataSourceConfigUpstream">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfig"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataSourceConfigUrl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#DataSourceConfigUrl">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfig"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataSourceConfigUser -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#DataSourceConfigUser">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfig"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#ReferenceFieldConceptRefName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#ReferenceFieldConceptRefName">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#ReferenceField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#ReferenceFieldMatchingAttribute -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#ReferenceFieldMatchingAttribute">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#ReferenceField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#ReferenceFieldReferenceMustExist -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#ReferenceFieldReferenceMustExist">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#ReferenceField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#SelfAggregatedReferenceHierarchyFieldIsChildrenUnique -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#SelfAggregatedReferenceHierarchyFieldIsChildrenUnique">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#SelfAggregatedReferenceHierarchyField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#SelfAggregatedReferenceHierarchyFieldIsParent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#SelfAggregatedReferenceHierarchyFieldIsParent">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#SelfAggregatedReferenceHierarchyField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#SelfReferenceHierarchyFieldIsChildrenUnique -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#SelfReferenceHierarchyFieldIsChildrenUnique">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#SelfReferenceHierarchyField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#SelfReferenceHierarchyFieldIsParent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#SelfReferenceHierarchyFieldIsParent">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#SelfReferenceHierarchyField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#SimpleDataFieldIsIDCriteria -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#SimpleDataFieldIsIDCriteria">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#SimpleDataField"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#SyncRecordDetectedSourceUrl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#SyncRecordDetectedSourceUrl">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#SyncRecord"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#SyncRecordId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#SyncRecordId">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#SyncRecord"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#SyncRecordLastActionDownstream -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#SyncRecordLastActionDownstream">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#SyncRecord"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#SyncRecordLastActionUpstream -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#SyncRecordLastActionUpstream">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#SyncRecord"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#SyncRecordLastExecutedBy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#SyncRecordLastExecutedBy">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#SyncRecord"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#SyncRecordLastExecution -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#SyncRecordLastExecution">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#SyncRecord"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#SyncRecordMatchedServiceName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#SyncRecordMatchedServiceName">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#SyncRecord"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#SyncRecordMsg -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#SyncRecordMsg">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#SyncRecord"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#SyncRecordOptMsg -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#SyncRecordOptMsg">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#SyncRecord"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#SyncRecordRunning -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#SyncRecordRunning">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#SyncRecord"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#SyncRecordStatusOk -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cdlflex.org/config.owl#SyncRecordStatusOk">
+        <rdfs:domain rdf:resource="http://www.cdlflex.org/config.owl#SyncRecord"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#Abstract_DataSourceField -->
+
+    <owl:Class rdf:about="http://www.cdlflex.org/config.owl#Abstract_DataSourceField">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#Abstract_DataSourceFieldIsHiddenEntry"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#Abstract_DataSourceFieldPos"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#Abstract_DataSourceFieldDefaultValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#Abstract_DataSourceFieldConceptAttributeName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#Abstract_DataSourceFieldId"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#Abstract_DataSourceFieldName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@left:500</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@top:60</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class has been marked as abstract in UML.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">\u00a0If isHiddenEntry then an individual is linked which is not part of the spreadsheet. For instance a project, etc. However, the default Value is treated in the same way as a cell value. In this case pos should be set to -1.</rdfs:comment>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.cdlflex.org/config.owl#Abstract_DataSourceFieldId"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#AggregatedReferenceField -->
+
+    <owl:Class rdf:about="http://www.cdlflex.org/config.owl#AggregatedReferenceField">
+        <rdfs:subClassOf rdf:resource="http://www.cdlflex.org/config.owl#ReferenceField"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#AggregatedReferenceFieldDelimiter"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@left:400</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@top:380</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataField -->
+
+    <owl:Class rdf:about="http://www.cdlflex.org/config.owl#DataField">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#DataFieldType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#DataFieldContent"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#DataFieldId"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@left:20</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@status:local</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@top:240</rdfs:comment>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.cdlflex.org/config.owl#DataFieldId"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataRecord -->
+
+    <owl:Class rdf:about="http://www.cdlflex.org/config.owl#DataRecord">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#DataRecordId"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#hasDataRecordDataFieldComposition"/>
+                <owl:someValuesFrom rdf:resource="http://www.cdlflex.org/config.owl#DataField"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@left:20</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@status:local</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@top:40</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic data record.
+The data field can consist
+of multiple entries,
+separated by a delimiter.</rdfs:comment>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.cdlflex.org/config.owl#DataRecordId"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#DataSourceConfig -->
+
+    <owl:Class rdf:about="http://www.cdlflex.org/config.owl#DataSourceConfig">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfigApiKey"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfigDownstream"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfigStartRow"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfigConnectorType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfigDeactivated"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#syncInfo"/>
+                                <owl:onClass rdf:resource="http://www.cdlflex.org/config.owl#SyncRecord"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#syncInfo"/>
+                                <owl:onClass rdf:resource="http://www.cdlflex.org/config.owl#SyncRecord"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#syncInfo"/>
+                        <owl:onClass rdf:resource="http://www.cdlflex.org/config.owl#SyncRecord"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfigPassword"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfigUpstream"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfigEndRow"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfigName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfigSpreadsheetNo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfigMainConcept"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfigUser"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#has"/>
+                <owl:someValuesFrom rdf:resource="http://www.cdlflex.org/config.owl#Abstract_DataSourceField"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfigId"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfigUrl"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfigOriginArea"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#DataSourceConfigRemote"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@left:180</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@top:40</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data source can be either a file (e.g. spreadsheet) or an application (e.g. Jira).</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sourceType: google, msexcel, ...</rdfs:comment>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.cdlflex.org/config.owl#DataSourceConfigId"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#ReferenceField -->
+
+    <owl:Class rdf:about="http://www.cdlflex.org/config.owl#ReferenceField">
+        <rdfs:subClassOf rdf:resource="http://www.cdlflex.org/config.owl#Abstract_DataSourceField"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#ReferenceFieldConceptRefName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#ReferenceFieldReferenceMustExist"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#ReferenceFieldMatchingAttribute"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@left:500</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@top:240</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference must exist
+is by default false and
+is not implemented yet.
+(only for future).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#RowNumberField -->
+
+    <owl:Class rdf:about="http://www.cdlflex.org/config.owl#RowNumberField">
+        <rdfs:subClassOf rdf:resource="http://www.cdlflex.org/config.owl#Abstract_DataSourceField"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@left:720</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@top:80</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#SelfAggregatedReferenceField -->
+
+    <owl:Class rdf:about="http://www.cdlflex.org/config.owl#SelfAggregatedReferenceField">
+        <rdfs:subClassOf rdf:resource="http://www.cdlflex.org/config.owl#AggregatedReferenceField"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@left:380</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@top:560</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Same as SelfReferenceColumn,
+but for multiple attributes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#SelfAggregatedReferenceHierarchyField -->
+
+    <owl:Class rdf:about="http://www.cdlflex.org/config.owl#SelfAggregatedReferenceHierarchyField">
+        <rdfs:subClassOf rdf:resource="http://www.cdlflex.org/config.owl#SelfAggregatedReferenceField"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#SelfAggregatedReferenceHierarchyFieldIsParent"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#SelfAggregatedReferenceHierarchyFieldIsChildrenUnique"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@left:360</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@top:740</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#SelfReferenceField -->
+
+    <owl:Class rdf:about="http://www.cdlflex.org/config.owl#SelfReferenceField">
+        <rdfs:subClassOf rdf:resource="http://www.cdlflex.org/config.owl#ReferenceField"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@left:660</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@top:380</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A column referring
+to the same concept as
+the main concept.
+e.g. a requirement can
+refer to dependent requirements.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#SelfReferenceHierarchyField -->
+
+    <owl:Class rdf:about="http://www.cdlflex.org/config.owl#SelfReferenceHierarchyField">
+        <rdfs:subClassOf rdf:resource="http://www.cdlflex.org/config.owl#SelfReferenceField"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#SelfReferenceHierarchyFieldIsChildrenUnique"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#SelfReferenceHierarchyFieldIsParent"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@left:640</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@top:560</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nested hierarchies possible.
+for instance a requirement can
+be a subrequirement of another.
+
+isParent: referred object is a parent of the current object. otherwise, it is a child.
+
+isChildrenUnique: each child in the hierarchy can only be assigned to one hierarchy. For instance a subrequirement could either be part of two requirements, or only of one. Analogeously, this could be the case for team members in a project hierarchy.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#SimpleDataField -->
+
+    <owl:Class rdf:about="http://www.cdlflex.org/config.owl#SimpleDataField">
+        <rdfs:subClassOf rdf:resource="http://www.cdlflex.org/config.owl#Abstract_DataSourceField"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#SimpleDataFieldIsIDCriteria"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@left:720</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@top:240</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If true, then the
+value has to be
+unique for each
+record.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cdlflex.org/config.owl#SyncRecord -->
+
+    <owl:Class rdf:about="http://www.cdlflex.org/config.owl#SyncRecord">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#SyncRecordLastActionDownstream"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#SyncRecordLastExecutedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#SyncRecordMatchedServiceName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#SyncRecordRunning"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#SyncRecordDetectedSourceUrl"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#SyncRecordLastExecution"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#SyncRecordLastActionUpstream"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#SyncRecordMsg"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#SyncRecordStatusOk"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#SyncRecordOptMsg"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cdlflex.org/config.owl#SyncRecordId"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@left:120</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@internal:@top:560</rdfs:comment>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.cdlflex.org/config.owl#SyncRecordId"/>
+        </owl:hasKey>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.3-SNAPSHOT) http://owlapi.sourceforge.net -->
+

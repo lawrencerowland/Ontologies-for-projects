@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY pmbok-role "http://pszwed.ia.agh.edu.pl/ontologies/pmbok-role.owl#" >
+    <!ENTITY pmbok "http://pszwed.ia.agh.edu.pl/ontologies/pmbok-role.owl#pmbok." >
+]>
+
+
+<rdf:RDF xmlns="http://pszwed.ia.agh.edu.pl/ontologies/pmbok-role.owl#"
+     xml:base="http://pszwed.ia.agh.edu.pl/ontologies/pmbok-role.owl"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:pmbok-role="http://pszwed.ia.agh.edu.pl/ontologies/pmbok-role.owl#"
+     xmlns:pmbok="&pmbok-role;pmbok."
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:Ontology rdf:about=""/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://pszwed.ia.agh.edu.pl/ontologies/pmbok-role.owl#Role -->
+
+    <owl:Class rdf:about="#Role"/>
+    
+
+
+    <!-- http://pszwed.ia.agh.edu.pl/ontologies/pmbok-role.owl#pmbok.ChangeControlBoard -->
+
+    <owl:Class rdf:about="#pmbok.ChangeControlBoard">
+        <rdfs:subClassOf rdf:resource="#pmbok.ProjectPerformer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pszwed.ia.agh.edu.pl/ontologies/pmbok-role.owl#pmbok.Customer -->
+
+    <owl:Class rdf:about="#pmbok.Customer">
+        <rdfs:subClassOf rdf:resource="#pmbok.Stakeholder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pszwed.ia.agh.edu.pl/ontologies/pmbok-role.owl#pmbok.FunctionalManager -->
+
+    <owl:Class rdf:about="#pmbok.FunctionalManager">
+        <rdfs:subClassOf rdf:resource="#pmbok.ProjectPerformer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pszwed.ia.agh.edu.pl/ontologies/pmbok-role.owl#pmbok.ProjectDevelopmentTeam -->
+
+    <owl:Class rdf:about="#pmbok.ProjectDevelopmentTeam">
+        <rdfs:subClassOf rdf:resource="#pmbok.ProjectTeam"/>
+        <owl:disjointWith rdf:resource="#pmbok.ProjectManagementTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pszwed.ia.agh.edu.pl/ontologies/pmbok-role.owl#pmbok.ProjectManagementTeam -->
+
+    <owl:Class rdf:about="#pmbok.ProjectManagementTeam">
+        <rdfs:subClassOf rdf:resource="#pmbok.ProjectTeam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pszwed.ia.agh.edu.pl/ontologies/pmbok-role.owl#pmbok.ProjectManager -->
+
+    <owl:Class rdf:about="#pmbok.ProjectManager">
+        <rdfs:subClassOf rdf:resource="#pmbok.ProjectPerformer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pszwed.ia.agh.edu.pl/ontologies/pmbok-role.owl#pmbok.ProjectPerformer -->
+
+    <owl:Class rdf:about="#pmbok.ProjectPerformer">
+        <rdfs:subClassOf rdf:resource="#pmbok.Stakeholder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pszwed.ia.agh.edu.pl/ontologies/pmbok-role.owl#pmbok.ProjectTeam -->
+
+    <owl:Class rdf:about="#pmbok.ProjectTeam">
+        <rdfs:subClassOf rdf:resource="#pmbok.ProjectPerformer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pszwed.ia.agh.edu.pl/ontologies/pmbok-role.owl#pmbok.Seller -->
+
+    <owl:Class rdf:about="#pmbok.Seller">
+        <rdfs:subClassOf rdf:resource="#pmbok.Stakeholder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pszwed.ia.agh.edu.pl/ontologies/pmbok-role.owl#pmbok.Sponsor -->
+
+    <owl:Class rdf:about="#pmbok.Sponsor">
+        <rdfs:subClassOf rdf:resource="#pmbok.Stakeholder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pszwed.ia.agh.edu.pl/ontologies/pmbok-role.owl#pmbok.Stakeholder -->
+
+    <owl:Class rdf:about="#pmbok.Stakeholder">
+        <rdfs:subClassOf rdf:resource="#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pszwed.ia.agh.edu.pl/ontologies/pmbok-role.owl#pmbok.User -->
+
+    <owl:Class rdf:about="#pmbok.User">
+        <rdfs:subClassOf rdf:resource="#pmbok.Stakeholder"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#pmbok.ChangeControlBoard"/>
+            <rdf:Description rdf:about="#pmbok.FunctionalManager"/>
+            <rdf:Description rdf:about="#pmbok.ProjectManager"/>
+            <rdf:Description rdf:about="#pmbok.ProjectTeam"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,824 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.0="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#296">
+    <rdfs:label>Front Office</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessActor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Node">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#TechnologyLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#676">
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#673"/>
+    <rdfs:label>Claim Form</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Representation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#721">
+    <j.0:triggering rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#612"/>
+    <rdfs:label>Formalise Request</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessInteraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#612">
+    <j.0:triggering rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#722"/>
+    <rdfs:label>Create Contract</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#733">
+    <j.0:assignment rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#721"/>
+    <j.0:aggregation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#514"/>
+    <j.0:aggregation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#507"/>
+    <j.0:aggregation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#521"/>
+    <rdfs:label>Negotiation</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessCollaboration"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1101">
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1882"/>
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1071"/>
+    <rdfs:label>LAN</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Network"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#839">
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#673"/>
+    <rdfs:label>Damage Claim Data</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#DataObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1004">
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1101"/>
+    <rdfs:label>Firewall</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Node"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1546">
+    <j.0:aggregation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#528"/>
+    <j.0:aggregation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#352"/>
+    <rdfs:label>collaboration</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessCollaboration"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1016">
+    <rdfs:label>DBMS</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#SystemSoftware"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#935">
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#722"/>
+    <rdfs:label>Policy Creation Service</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Connector">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1250">
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1208"/>
+    <rdfs:label>Be Insured</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Value"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#352">
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#289"/>
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#324"/>
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#282"/>
+    <rdfs:label>Document Processing SSC</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessActor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#MotivationLayerElement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1071">
+    <rdfs:label>Admin Server</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Device"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#specialisation">
+    <rdfs:subPropertyOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#archimate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#651">
+    <j.0:triggering rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#564"/>
+    <rdfs:label>Damage Occured</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessEvent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1095">
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1004"/>
+    <rdfs:label>BIBIT</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Network"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#675">
+    <j.0:aggregation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#673"/>
+    <j.0:aggregation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#792"/>
+    <rdfs:label>Insurance Policy</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#796">
+    <j.0:specialisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#675"/>
+    <rdfs:label>Legal aid  Insurance Policy</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#66a2171b">
+    <rdfs:label>TCO Goal</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Principle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#realisation">
+    <rdfs:subPropertyOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#archimate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#324">
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#331"/>
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#352"/>
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#338"/>
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#345"/>
+    <rdfs:label>Back Office</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessActor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#514">
+    <j.0:assignment rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#556"/>
+    <j.0:assignment rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#612"/>
+    <rdfs:label>Insurer</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessRole"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#composition">
+    <rdfs:subPropertyOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#archimate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#838">
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#803"/>
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#796"/>
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#795"/>
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#793"/>
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#794"/>
+    <rdfs:label>Insurance Policy Data</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#DataObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1302">
+    <j.0:triggering rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1311"/>
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1214"/>
+    <rdfs:label>Inform Customer</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#837">
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#674"/>
+    <rdfs:label>Customer File Data</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#DataObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessFunction">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1544">
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#352"/>
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#521"/>
+    <rdfs:label>mail</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessInterface"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#946">
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#792"/>
+    <rdfs:label>Insurance Request Data</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#DataObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#998">
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1095"/>
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1116"/>
+    <rdfs:label>Firewall</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Node"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#986">
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1089"/>
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1455"/>
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1128"/>
+    <rdfs:label>Mainframe</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Node"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationComponent">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessActor">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessLayerElement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#791">
+    <j.0:aggregation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#674"/>
+    <rdfs:label>Customer</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#3db08b5c">
+    <rdfs:label>Infrastructure Principle</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Principle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessRole">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#331">
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#528"/>
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#324"/>
+    <rdfs:label>Finance</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessActor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#521">
+    <j.0:triggering rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#650"/>
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#507"/>
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#477"/>
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1250"/>
+    <rdfs:label>Customer</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessRole"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Network">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#TechnologyLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1407">
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#861"/>
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#612"/>
+    <rdfs:label>CIS</rdfs:label>
+    <rdfs:comment>Customer Information Service
+</rdfs:comment>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#303">
+    <rdfs:label>Home  &amp;  Away</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessActor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#DataObject">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#409">
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#289"/>
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#282"/>
+    <rdfs:label>Director of Sales</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessActor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1882">
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1813"/>
+    <rdfs:label>BIBIT Server</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Device"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1462">
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1399"/>
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#861"/>
+    <rdfs:label>Customer File Service</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#InfrastructureService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1220">
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#564"/>
+    <rdfs:label>Customer data mutation Service</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1870">
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1399"/>
+    <rdfs:label>Financial Software</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#SystemSoftware"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Representation">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1393">
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1800"/>
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1407"/>
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1196"/>
+    <rdfs:label>CRM System</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationComponent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#572">
+    <j.0:triggering rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#580"/>
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1214"/>
+    <j.0:access rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#674"/>
+    <j.0:access rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#673"/>
+    <j.0:access rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#675"/>
+    <rdfs:label>Accept</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#596">
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1196"/>
+    <rdfs:label>Close Contract</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ImplementationAndMigrationLayerElement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1053">
+    <rdfs:label>Unix Server</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Device"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#556">
+    <j.0:triggering rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1302"/>
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1226"/>
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1202"/>
+    <rdfs:label>Handle Claim</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#423">
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#331"/>
+    <rdfs:label>Director of Finance</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessActor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1065">
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1462"/>
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1110"/>
+    <rdfs:label>NAS File Server</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Device"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#338">
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#324"/>
+    <rdfs:label>Product Development</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessActor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1110">
+    <rdfs:label>File Service</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#InfrastructureService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#722">
+    <rdfs:label>Check and  Sign Contract</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessInteraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#909">
+    <j.0:access rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#837"/>
+    <rdfs:label>Store Policy</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationFunction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#flow">
+    <rdfs:subPropertyOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#archimate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1089">
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1065"/>
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#998"/>
+    <rdfs:label>LAN</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Network"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1337">
+    <j.0:assignment rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1368"/>
+    <rdfs:label>Client</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessActor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#528">
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#501"/>
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#331"/>
+    <rdfs:label>Customer's Bank</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessRole"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessCollaboration">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#803">
+    <j.0:specialisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#675"/>
+    <rdfs:label>Home Insurance Policy</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1542">
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#289"/>
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#507"/>
+    <rdfs:label>GIM</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessInterface"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#867">
+    <j.0:access rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#839"/>
+    <rdfs:label>Claim Data Management</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationComponent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#855">
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1793"/>
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#849"/>
+    <j.0:access rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#837"/>
+    <rdfs:label>Customer Data  Access</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationComponent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#843">
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#935"/>
+    <j.0:composition rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#861"/>
+    <j.0:composition rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#855"/>
+    <rdfs:label>Home &amp; Away Policy Administration</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationComponent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#triggering">
+    <rdfs:subPropertyOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#archimate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessProcess">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#f5674126">
+    <rdfs:label>Client Satisfaction Goal</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Principle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#992">
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1089"/>
+    <rdfs:label>Unix Server Farm</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Node"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#67316f1f">
+    <rdfs:label>Treatment Time Principle</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Principle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationFunction">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Device">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#TechnologyLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#793">
+    <j.0:specialisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#675"/>
+    <rdfs:label>Travel  Insurance Policy</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#345">
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#324"/>
+    <rdfs:label>HRM</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessActor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#402">
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#416"/>
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#338"/>
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#423"/>
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#409"/>
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#345"/>
+    <rdfs:label>Board</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessActor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1813">
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1399"/>
+    <rdfs:label>Bank System</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationComponent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1538">
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#282"/>
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#521"/>
+    <rdfs:label>e-mail</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessInterface"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#archimate">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1239">
+    <rdfs:label>Travel Insurance Policy</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Contract"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#507">
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#521"/>
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#471"/>
+    <rdfs:label>Intermediary</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessRole"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#317">
+    <rdfs:label>Legal Aid</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessActor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl">
+    <dc:description>Automatically generated ontology based on ArchiMate model</dc:description>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#903">
+    <j.0:triggering rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#909"/>
+    <j.0:access rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#838"/>
+    <rdfs:label>Create Policy</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationFunction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1214">
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1368"/>
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#521"/>
+    <rdfs:label>Customer Information Service</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1202">
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1368"/>
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#521"/>
+    <rdfs:label>Claim Registration Service</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1399">
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#843"/>
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1208"/>
+    <rdfs:label>Financial Application</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationComponent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1311">
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1208"/>
+    <rdfs:label>Collect Premium</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessInterface">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Principle">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#MotivationLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#aggregation">
+    <rdfs:subPropertyOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#archimate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#TechnologyLayerElement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationService">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#275">
+    <j.0:assignment rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#514"/>
+    <rdfs:label>Archisurance</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessActor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#792">
+    <rdfs:label>Insurance Request</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#740">
+    <j.0:assignment rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#722"/>
+    <j.0:aggregation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#521"/>
+    <j.0:aggregation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#514"/>
+    <j.0:aggregation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#507"/>
+    <rdfs:label>Contracting</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessCollaboration"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#477">
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#521"/>
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#489"/>
+    <rdfs:label>Maintaining Customer Relations</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessFunction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationLayerElement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1196">
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#564"/>
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#521"/>
+    <rdfs:label>Insurance Application Service</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#489">
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#477"/>
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#501"/>
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#521"/>
+    <rdfs:label>Claims Handling</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessFunction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1059">
+    <rdfs:label>Unix Server</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Device"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1226">
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1368"/>
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#521"/>
+    <rdfs:label>Claims Payment Service</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1800">
+    <rdfs:label>Web portal</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationComponent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1455">
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#861"/>
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1393"/>
+    <rdfs:label>Claim Files Service</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#InfrastructureService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#association">
+    <rdfs:subPropertyOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#archimate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1540">
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#289"/>
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#507"/>
+    <rdfs:label>phone</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessInterface"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#897">
+    <j.0:triggering rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#903"/>
+    <rdfs:label>Calculate Premium</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationFunction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#885">
+    <rdfs:label>Policy Creation</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationFunction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#af0e8c76">
+    <rdfs:label>Component Principle</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Principle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#861">
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1414"/>
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1220"/>
+    <j.0:access rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#838"/>
+    <rdfs:label>Policy Data Management</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationComponent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessInteraction">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#b56d54a6">
+    <rdfs:label>Costs Goal</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Principle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#650">
+    <j.0:triggering rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#721"/>
+    <rdfs:label>Request for Insurance</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessEvent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#674">
+    <j.0:composition rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#792"/>
+    <j.0:composition rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#675"/>
+    <j.0:composition rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#673"/>
+    <rdfs:label>Customer File</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#795">
+    <j.0:specialisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#675"/>
+    <rdfs:label>Liability  Insurance Policy</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#usedBy">
+    <rdfs:subPropertyOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#archimate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#501">
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#495"/>
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#528"/>
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#489"/>
+    <rdfs:label>Financial Handling</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessFunction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1010">
+    <rdfs:label>Message Queing</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#SystemSoftware"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1022">
+    <rdfs:label>CICS</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#SystemSoftware"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1536">
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#521"/>
+    <rdfs:label>phone</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessInterface"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#416">
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#303"/>
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#352"/>
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#317"/>
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#310"/>
+    <rdfs:label>Director of Operations</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessActor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#849">
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1800"/>
+    <rdfs:label>Risk Assessment</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationComponent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessObject">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1116">
+    <rdfs:label>Network Service</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#InfrastructureService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1128">
+    <rdfs:label>Database Service</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#InfrastructureService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#access">
+    <rdfs:subPropertyOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#archimate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessEvent">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1793">
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1800"/>
+    <rdfs:label>Call center application</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationComponent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#712d4eec">
+    <rdfs:label>Licence Principle</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Principle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Contract">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#282">
+    <j.0:association rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1536"/>
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#352"/>
+    <rdfs:label>Customer Relations</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessActor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#3938617c">
+    <rdfs:label>One Stop Principle</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Principle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessService">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#471">
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#507"/>
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#483"/>
+    <rdfs:label>Maintaining Intermediary Relations</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessFunction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Value">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#580">
+    <j.0:triggering rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#588"/>
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1214"/>
+    <j.0:access rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#673"/>
+    <rdfs:label>Valuate</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#495">
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#501"/>
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#483"/>
+    <rdfs:label>Asset Management</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessFunction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#483">
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#495"/>
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#471"/>
+    <rdfs:label>Contracting</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessFunction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#assignment">
+    <rdfs:subPropertyOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#archimate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#289">
+    <j.0:flow rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#352"/>
+    <rdfs:label>Intermediary Relations</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessActor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#673">
+    <rdfs:label>Damage Claim</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#794">
+    <j.0:specialisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#675"/>
+    <rdfs:label>Car Insurance Policy</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#310">
+    <rdfs:label>Car</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessActor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#564">
+    <j.0:triggering rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#572"/>
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1202"/>
+    <j.0:access rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#673"/>
+    <j.0:access rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#674"/>
+    <rdfs:label>Register</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#588">
+    <j.0:access rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#674"/>
+    <j.0:realisation rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1226"/>
+    <rdfs:label>Pay</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#3764dcef">
+    <rdfs:label>Occupancy Principle</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#Principle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1208">
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#588"/>
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#521"/>
+    <rdfs:label>Premium Payment Service</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#SystemSoftware">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#TechnologyLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1414">
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1399"/>
+    <j.0:usedBy rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#721"/>
+    <rdfs:label>Claim InfoServ</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#1368">
+    <rdfs:label>Insurant</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#BusinessRole"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#InfrastructureService">
+    <rdfs:subClassOf rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#TechnologyLayerElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#891">
+    <j.0:triggering rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#897"/>
+    <j.0:access rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/Archisurance.owl#946"/>
+    <rdfs:label>Calculate Risk</rdfs:label>
+    <rdf:type rdf:resource="http://pszwed.kis.agh.edu.pl/ontologies/archi/archimate.owl#ApplicationFunction"/>
+  </rdf:Description>
+</rdf:RDF>

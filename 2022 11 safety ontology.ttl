@@ -1,0 +1,1067 @@
+@prefix : <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix swrlx: <http://www.w3.org/2003/11/swrlx#> .
+
+@base <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3> .
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3> rdf:type :Ontology .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+
+swrla:isRuleEnabled rdf:type :AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#CIoTUseActiveMD
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#CIoTUseActiveMD> rdf:type :ObjectProperty ;
+                                                                                                    
+                                                                                                    rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ActiveMD> ;
+                                                                                                    
+                                                                                                    rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ControlIoTS> ;
+                                                                                                    
+                                                                                                    rdfs:subPropertyOf :topObjectProperty .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#EHasEnvironmentSPE
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#EHasEnvironmentSPE> rdf:type :ObjectProperty ;
+                                                                                                       
+                                                                                                       rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#EnvironmentSPE> ;
+                                                                                                       
+                                                                                                       rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Section> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#EHasRisk
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#EHasRisk> rdf:type :ObjectProperty ;
+                                                                                             
+                                                                                             rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HazardousEvent> ;
+                                                                                             
+                                                                                             rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Section> ;
+                                                                                             
+                                                                                             rdfs:subPropertyOf :topObjectProperty .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HEMightLeadToRisk
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HEMightLeadToRisk> rdf:type :ObjectProperty ;
+                                                                                                      
+                                                                                                      rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HazardousEvent> ;
+                                                                                                      
+                                                                                                      rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Risk> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HHasSource
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HHasSource> rdf:type :ObjectProperty ;
+                                                                                               
+                                                                                               rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HazardousEvent> ;
+                                                                                               
+                                                                                               rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WorkActivity> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#MDMonitorEnvironment
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#MDMonitorEnvironment> rdf:type :ObjectProperty ;
+                                                                                                         
+                                                                                                         rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PassiveMD> ;
+                                                                                                         
+                                                                                                         rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Section> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#OHasObjectSPE
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#OHasObjectSPE> rdf:type :ObjectProperty ;
+                                                                                                  
+                                                                                                  rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Object> ;
+                                                                                                  
+                                                                                                  rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ObjectSPE> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#OHasRisk
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#OHasRisk> rdf:type :ObjectProperty ;
+                                                                                             
+                                                                                             rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HazardousEvent> ;
+                                                                                             
+                                                                                             rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Object> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PSHasResponsible
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PSHasResponsible> rdf:type :ObjectProperty ;
+                                                                                                     
+                                                                                                     rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PreventiveStrategy> ;
+                                                                                                     
+                                                                                                     rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Subject> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PSRequireAccessToControlIoTS
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PSRequireAccessToControlIoTS> rdf:type :ObjectProperty ;
+                                                                                                                 
+                                                                                                                 rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ControlIoTS> ;
+                                                                                                                 
+                                                                                                                 rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PreventiveStrategy> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RHasConcequence
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RHasConcequence> rdf:type :ObjectProperty ;
+                                                                                                    
+                                                                                                    rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Consequence> ;
+                                                                                                    
+                                                                                                    rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HazardousEvent> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RHasLocation
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RHasLocation> rdf:type :ObjectProperty ;
+                                                                                                 
+                                                                                                 rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Environment> ;
+                                                                                                 
+                                                                                                 rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HazardousEvent> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RHasPreventiveStrategy
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RHasPreventiveStrategy> rdf:type :ObjectProperty ;
+                                                                                                           
+                                                                                                           rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HazardousEvent> ;
+                                                                                                           
+                                                                                                           rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PreventiveStrategy> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RIsMitigatedByPS
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RIsMitigatedByPS> rdf:type :ObjectProperty ;
+                                                                                                     
+                                                                                                     rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HazardousEvent> ;
+                                                                                                     
+                                                                                                     rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PreventiveStrategy> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SHasRole
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SHasRole> rdf:type :ObjectProperty ;
+                                                                                             
+                                                                                             rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Role> ;
+                                                                                             
+                                                                                             rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Subject> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SHasSkill
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SHasSkill> rdf:type :ObjectProperty ;
+                                                                                              
+                                                                                              rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Skill> ;
+                                                                                              
+                                                                                              rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Subject> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SIoTSenseAmbientData
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SIoTSenseAmbientData> rdf:type :ObjectProperty ;
+                                                                                                         
+                                                                                                         rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Environment> ;
+                                                                                                         
+                                                                                                         rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SenseIoTS> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SIoTUsePassiveMD
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SIoTUsePassiveMD> rdf:type :ObjectProperty ;
+                                                                                                     
+                                                                                                     rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PassiveMD> ;
+                                                                                                     
+                                                                                                     rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SenseIoTS> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SUseSubjectSPE
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SUseSubjectSPE> rdf:type :ObjectProperty ;
+                                                                                                   
+                                                                                                   rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Subject> ;
+                                                                                                   
+                                                                                                   rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SubjectSPE> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WAIncludeWorkTask
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WAIncludeWorkTask> rdf:type :ObjectProperty ;
+                                                                                                      
+                                                                                                      rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WorkActivity> ;
+                                                                                                      
+                                                                                                      rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WorkTask> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WTHasRisk
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WTHasRisk> rdf:type :ObjectProperty ;
+                                                                                              
+                                                                                              rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HazardousEvent> ;
+                                                                                              
+                                                                                              rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WorkActivity> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WTPerformedInEnv
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WTPerformedInEnv> rdf:type :ObjectProperty ;
+                                                                                                     
+                                                                                                     rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Environment> ;
+                                                                                                     
+                                                                                                     rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WorkActivity> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WTPermitRole
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WTPermitRole> rdf:type :ObjectProperty ;
+                                                                                                 
+                                                                                                 rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Role> ;
+                                                                                                 
+                                                                                                 rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WorkTask> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WTReauireSkill
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WTReauireSkill> rdf:type :ObjectProperty ;
+                                                                                                   
+                                                                                                   rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Skill> ;
+                                                                                                   
+                                                                                                   rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WorkTask> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WTRequireObject
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WTRequireObject> rdf:type :ObjectProperty ;
+                                                                                                    
+                                                                                                    rdfs:range <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Object> ;
+                                                                                                    
+                                                                                                    rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WorkTask> .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ExecutionModel
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ExecutionModel> rdf:type :DatatypeProperty ;
+                                                                                                   
+                                                                                                   rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PreventiveStrategy> ;
+                                                                                                   
+                                                                                                   rdfs:range xsd:boolean .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Experience
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Experience> rdf:type :DatatypeProperty ;
+                                                                                               
+                                                                                               rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Skill> ;
+                                                                                               
+                                                                                               rdfs:range xsd:int .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Level
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Level> rdf:type :DatatypeProperty ;
+                                                                                          
+                                                                                          rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HazardousEvent> ;
+                                                                                          
+                                                                                          rdfs:range xsd:integer .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Likelihood
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Likelihood> rdf:type :DatatypeProperty ;
+                                                                                               
+                                                                                               rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Consequence> ;
+                                                                                               
+                                                                                               rdfs:range :real .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PreventiveStrategyPriority
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PreventiveStrategyPriority> rdf:type :DatatypeProperty ;
+                                                                                                               
+                                                                                                               rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PreventiveStrategy> ;
+                                                                                                               
+                                                                                                               rdfs:range xsd:integer .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RiskPriority
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RiskPriority> rdf:type :DatatypeProperty ;
+                                                                                                 
+                                                                                                 rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HazardousEvent> ;
+                                                                                                 
+                                                                                                 rdfs:range xsd:integer .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SIoTMeasureValue
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SIoTMeasureValue> rdf:type :DatatypeProperty ;
+                                                                                                     
+                                                                                                     rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SenseIoTS> ;
+                                                                                                     
+                                                                                                     rdfs:range :real .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SensorValue
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SensorValue> rdf:type :DatatypeProperty ;
+                                                                                                
+                                                                                                rdfs:domain <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PassiveMD> ;
+                                                                                                
+                                                                                                rdfs:range :real .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ActiveMD
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ActiveMD> rdf:type :Class ;
+                                                                                             
+                                                                                             rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#MonitoringDevices> ;
+                                                                                             
+                                                                                             :disjointWith <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PassiveMD> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ActivitySpecificPS
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ActivitySpecificPS> rdf:type :Class ;
+                                                                                                       
+                                                                                                       rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PreventiveStrategy> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Actor
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Actor> rdf:type :Class ;
+                                                                                          
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Subject> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ChemicalHE
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ChemicalHE> rdf:type :Class ;
+                                                                                               
+                                                                                               rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HazardousEvent> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ComplexTM
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ComplexTM> rdf:type :Class ;
+                                                                                              
+                                                                                              rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ToolAndMachinery> ;
+                                                                                              
+                                                                                              :disjointWith <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SimpleTM> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Consequence
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Consequence> rdf:type :Class ;
+                                                                                                
+                                                                                                rdfs:subClassOf :Thing .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ControlIoTS
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ControlIoTS> rdf:type :Class ;
+                                                                                                
+                                                                                                rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#IoTService> ;
+                                                                                                
+                                                                                                :disjointWith <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SenseIoTS> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#DrivingLiftTruck
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#DrivingLiftTruck> rdf:type :Class ;
+                                                                                                     
+                                                                                                     rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WorkTask> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ElectricalHE
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ElectricalHE> rdf:type :Class ;
+                                                                                                 
+                                                                                                 rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HazardousEvent> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Entity
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Entity> rdf:type :Class .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Environment
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Environment> rdf:type :Class ;
+                                                                                                
+                                                                                                rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Entity> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#EnvironmentSPE
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#EnvironmentSPE> rdf:type :Class ;
+                                                                                                   
+                                                                                                   rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SafetyProtectioElement> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#EnvironmentSpecificPS
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#EnvironmentSpecificPS> rdf:type :Class ;
+                                                                                                          
+                                                                                                          rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PreventiveStrategy> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HazardousEvent
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HazardousEvent> rdf:type :Class ;
+                                                                                                   
+                                                                                                   rdfs:subClassOf :Thing .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#IoTService
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#IoTService> rdf:type :Class ;
+                                                                                               
+                                                                                               rdfs:subClassOf :Thing .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#LiftTruck
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#LiftTruck> rdf:type :Class ;
+                                                                                              
+                                                                                              rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ComplexTM> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#MechanicalHE
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#MechanicalHE> rdf:type :Class ;
+                                                                                                 
+                                                                                                 rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HazardousEvent> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#MonitoringDevices
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#MonitoringDevices> rdf:type :Class ;
+                                                                                                      
+                                                                                                      rdfs:subClassOf :Thing .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Object
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Object> rdf:type :Class ;
+                                                                                           
+                                                                                           rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Entity> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ObjectSPE
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ObjectSPE> rdf:type :Class ;
+                                                                                              
+                                                                                              rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SafetyProtectioElement> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ObjectSpecificPS
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ObjectSpecificPS> rdf:type :Class ;
+                                                                                                     
+                                                                                                     rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PreventiveStrategy> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PassiveMD
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PassiveMD> rdf:type :Class ;
+                                                                                              
+                                                                                              rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#MonitoringDevices> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PhysicalHE
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PhysicalHE> rdf:type :Class ;
+                                                                                               
+                                                                                               rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HazardousEvent> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PreventiveStrategy
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PreventiveStrategy> rdf:type :Class ;
+                                                                                                       
+                                                                                                       rdfs:subClassOf :Thing .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PsychosocialHE
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PsychosocialHE> rdf:type :Class ;
+                                                                                                   
+                                                                                                   rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HazardousEvent> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Risk
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Risk> rdf:type :Class ;
+                                                                                         
+                                                                                         rdfs:subClassOf :Thing .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Role
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Role> rdf:type :Class .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SafetyProtectioElement
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SafetyProtectioElement> rdf:type :Class ;
+                                                                                                           
+                                                                                                           rdfs:subClassOf :Thing .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Section
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Section> rdf:type :Class ;
+                                                                                            
+                                                                                            rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Environment> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SenseDistanceService
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SenseDistanceService> rdf:type :Class ;
+                                                                                                         
+                                                                                                         rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SenseIoTS> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SenseIoTS
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SenseIoTS> rdf:type :Class ;
+                                                                                              
+                                                                                              rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#IoTService> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SimpleTM
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SimpleTM> rdf:type :Class ;
+                                                                                             
+                                                                                             rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ToolAndMachinery> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Skill
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Skill> rdf:type :Class .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Subject
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Subject> rdf:type :Class ;
+                                                                                            
+                                                                                            rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Entity> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SubjectSPE
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SubjectSPE> rdf:type :Class ;
+                                                                                               
+                                                                                               rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SafetyProtectioElement> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SubjectSpecificPS
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SubjectSpecificPS> rdf:type :Class ;
+                                                                                                      
+                                                                                                      rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PreventiveStrategy> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#System
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#System> rdf:type :Class ;
+                                                                                           
+                                                                                           rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Subject> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ToolAndMachinery
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ToolAndMachinery> rdf:type :Class ;
+                                                                                                     
+                                                                                                     rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Object> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WorkActivity
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WorkActivity> rdf:type :Class ;
+                                                                                                 
+                                                                                                 rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Entity> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WorkTask
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WorkTask> rdf:type :Class ;
+                                                                                             
+                                                                                             rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WorkActivity> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Worker
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Worker> rdf:type :Class ;
+                                                                                           
+                                                                                           rdfs:subClassOf <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Subject> .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#AlarmOperatorToStop
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#AlarmOperatorToStop> rdf:type <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ObjectSpecificPS> ,
+                                                                                                                 :NamedIndividual ;
+                                                                                                        
+                                                                                                        <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PreventiveStrategyPriority> 9 ;
+                                                                                                        
+                                                                                                        <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ExecutionModel> "false"^^xsd:boolean ;
+                                                                                                        
+                                                                                                        rdfs:comment "Alarm Operator to stop the truck: A preventive strategy" ;
+                                                                                                        
+                                                                                                        <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PSHasResponsible> <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Operator1> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#CollidingOtherVehicles
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#CollidingOtherVehicles> rdf:type <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PhysicalHE> ,
+                                                                                                                    :NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#DeathInjury
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#DeathInjury> rdf:type <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Consequence> ,
+                                                                                                         :NamedIndividual ;
+                                                                                                
+                                                                                                <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Likelihood> 0.95 .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#DistanceSensor
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#DistanceSensor> rdf:type <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PassiveMD> ,
+                                                                                                            :NamedIndividual ;
+                                                                                                   
+                                                                                                   <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SensorValue> 7.0 .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#DrivingLiftTruck1
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#DrivingLiftTruck1> rdf:type <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#DrivingLiftTruck> ,
+                                                                                                               :NamedIndividual ;
+                                                                                                      
+                                                                                                      <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WTHasRisk> <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#CollidingOtherVehicles> ;
+                                                                                                      
+                                                                                                      <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WTPermitRole> <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ForkLiftOperator> ;
+                                                                                                      
+                                                                                                      <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WTHasRisk> <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HittingPedestrian> ;
+                                                                                                      
+                                                                                                      <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WTRequireObject> <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#LiftTruck1> ;
+                                                                                                      
+                                                                                                      <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WTHasRisk> <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#TrippingOver> ;
+                                                                                                      
+                                                                                                      <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WTPerformedInEnv> <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WorkEnvironment> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ForkLiftOperator
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ForkLiftOperator> rdf:type <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Role> ,
+                                                                                                              :NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HardHat
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HardHat> rdf:type <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SubjectSPE> ,
+                                                                                                     :NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HittingPedestrian
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HittingPedestrian> rdf:type <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PhysicalHE> ,
+                                                                                                               :NamedIndividual ;
+                                                                                                      
+                                                                                                      <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Level> 5 ;
+                                                                                                      
+                                                                                                      <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RIsMitigatedByPS> <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#AlarmOperatorToStop> ;
+                                                                                                      
+                                                                                                      <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RHasConcequence> <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#DeathInjury> ;
+                                                                                                      
+                                                                                                      <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RIsMitigatedByPS> <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#StopTruck> ;
+                                                                                                      
+                                                                                                      <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RHasLocation> <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WorkEnvironment> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#LiftTruck1
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#LiftTruck1> rdf:type <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#LiftTruck> ,
+                                                                                                        :NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#OperatingForklift
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#OperatingForklift> rdf:type <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WorkActivity> ,
+                                                                                                               :NamedIndividual ;
+                                                                                                      
+                                                                                                      <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WAIncludeWorkTask> <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#DrivingLiftTruck1> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Operator1
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Operator1> rdf:type <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Worker> ,
+                                                                                                       :NamedIndividual ;
+                                                                                              
+                                                                                              <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SHasRole> <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ForkLiftOperator> ;
+                                                                                              
+                                                                                              <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SUseSubjectSPE> <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HardHat> ;
+                                                                                              
+                                                                                              <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SHasSkill> <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SafeWorkProcedure> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RAMIRES
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RAMIRES> rdf:type <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#System> ,
+                                                                                                     :NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RemoteStopActuator
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RemoteStopActuator> rdf:type <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ActiveMD> ,
+                                                                                                                :NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RemoteStopControl
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RemoteStopControl> rdf:type <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ControlIoTS> ,
+                                                                                                               :NamedIndividual ;
+                                                                                                      
+                                                                                                      <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#CIoTUseActiveMD> <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RemoteStopActuator> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SafeWorkProcedure
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SafeWorkProcedure> rdf:type <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Skill> ,
+                                                                                                               :NamedIndividual ;
+                                                                                                      
+                                                                                                      <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Experience> 5.0 .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SenseDistance
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SenseDistance> rdf:type <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SenseIoTS> ,
+                                                                                                           :NamedIndividual ;
+                                                                                                  
+                                                                                                  <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SIoTUsePassiveMD> <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#DistanceSensor> ;
+                                                                                                  
+                                                                                                  <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SIoTSenseAmbientData> <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WorkEnvironment> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#StopTruck
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#StopTruck> rdf:type <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ObjectSpecificPS> ,
+                                                                                                       :NamedIndividual ;
+                                                                                              
+                                                                                              <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PreventiveStrategyPriority> 9 ;
+                                                                                              
+                                                                                              <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ExecutionModel> "true"^^xsd:boolean ;
+                                                                                              
+                                                                                              <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PSHasResponsible> <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RAMIRES> .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#TrippingOver
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#TrippingOver> rdf:type <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PhysicalHE> ,
+                                                                                                          :NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WorkEnvironment
+
+<http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WorkEnvironment> rdf:type <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Environment> ,
+                                                                                                             :NamedIndividual .
+
+
+
+
+
+#################################################################
+#
+#    General axioms
+#
+#################################################################
+
+
+[ rdf:type :AllDisjointClasses ;
+  :members ( <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ChemicalHE>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ElectricalHE>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#MechanicalHE>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PhysicalHE>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PsychosocialHE>
+           )
+] .
+[ rdf:type :AllDisjointClasses ;
+  :members ( <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Consequence>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Entity>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HazardousEvent>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#IoTService>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#MonitoringDevices>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PreventiveStrategy>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Risk>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Role>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SafetyProtectioElement>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Skill>
+           )
+] .
+[ rdf:type :AllDisjointClasses ;
+  :members ( <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ActivitySpecificPS>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#EnvironmentSpecificPS>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ObjectSpecificPS>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SubjectSpecificPS>
+           )
+] .
+[ rdf:type :AllDisjointClasses ;
+  :members ( <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Actor>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#System>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Worker>
+           )
+] .
+[ rdf:type :AllDisjointClasses ;
+  :members ( <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Environment>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Object>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Subject>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WorkActivity>
+           )
+] .
+[ rdf:type :AllDisjointClasses ;
+  :members ( <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#EnvironmentSPE>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#ObjectSPE>
+             <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SubjectSPE>
+           )
+] .
+
+
+
+
+
+#################################################################
+#
+#    Rules
+#
+#################################################################
+
+
+:wt rdf:type swrl:Variable .
+:t rdf:type swrl:Variable .
+:sd rdf:type swrl:Variable .
+:d rdf:type swrl:Variable .
+[ rdf:type swrl:Imp ;
+  rdfs:label "Rule 1"^^xsd:string ;
+  rdfs:comment ""^^xsd:string ;
+  swrla:isRuleEnabled "true"^^xsd:boolean ;
+  swrl:body [ rdf:type swrl:AtomList ;
+              rdf:first [ rdf:type swrl:ClassAtom ;
+                          swrl:classPredicate <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#DrivingLiftTruck> ;
+                          swrl:argument1 :wt
+                        ] ;
+              rdf:rest [ rdf:type swrl:AtomList ;
+                         rdf:first [ rdf:type swrl:ClassAtom ;
+                                     swrl:classPredicate <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#LiftTruck> ;
+                                     swrl:argument1 :t
+                                   ] ;
+                         rdf:rest [ rdf:type swrl:AtomList ;
+                                    rdf:rest [ rdf:type swrl:AtomList ;
+                                               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                           swrl:propertyPredicate <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WTRequireObject> ;
+                                                           swrl:argument2 :t ;
+                                                           swrl:argument1 :wt
+                                                         ] ;
+                                               rdf:rest [ rdf:type swrl:AtomList ;
+                                                          rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                      swrl:propertyPredicate <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SIoTMeasureValue> ;
+                                                                      swrl:argument2 :d ;
+                                                                      swrl:argument1 :sd
+                                                                    ] ;
+                                                          rdf:rest [ rdf:type swrl:AtomList ;
+                                                                     rdf:rest rdf:nil ;
+                                                                     rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                                 swrl:builtin swrlb:greaterThan ;
+                                                                                 swrl:arguments [ rdf:type rdf:List ;
+                                                                                                  rdf:first :d ;
+                                                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                                                             rdf:first "8"^^xsd:int ;
+                                                                                                             rdf:rest rdf:nil
+                                                                                                           ]
+                                                                                                ]
+                                                                               ]
+                                                                   ]
+                                                        ]
+                                             ] ;
+                                    rdf:first [ rdf:type swrl:ClassAtom ;
+                                                swrl:classPredicate <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#SenseDistanceService> ;
+                                                swrl:argument1 :sd
+                                              ]
+                                  ]
+                       ]
+            ] ;
+  swrl:head [ rdf:type swrl:AtomList ;
+              rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                          swrl:argument1 <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#AlarmOperatorToStop> ;
+                          swrl:argument2 <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#Operator1> ;
+                          swrl:propertyPredicate <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#PSHasResponsible>
+                        ] ;
+              rdf:rest [ rdf:type swrl:AtomList ;
+                         rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                     swrl:argument2 <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#DeathInjury> ;
+                                     swrl:argument1 <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HittingPedestrian> ;
+                                     swrl:propertyPredicate <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RHasConcequence>
+                                   ] ;
+                         rdf:rest [ rdf:type swrl:AtomList ;
+                                    rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                swrl:argument2 <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#AlarmOperatorToStop> ;
+                                                swrl:argument1 <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HittingPedestrian> ;
+                                                swrl:propertyPredicate <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#RHasPreventiveStrategy>
+                                              ] ;
+                                    rdf:rest [ rdf:type swrl:AtomList ;
+                                               rdf:rest rdf:nil ;
+                                               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                           swrl:argument2 <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#HittingPedestrian> ;
+                                                           swrl:propertyPredicate <http://www.semanticweb.org/mahsateimourikia/ontologies/2016/1/untitled-ontology-3#WTHasRisk> ;
+                                                           swrl:argument1 :wt
+                                                         ]
+                                             ]
+                                  ]
+                       ]
+            ]
+] .
+
+###  Generated by the OWL API (version 3.4.5-SNAPSHOT) http://owlapi.sourceforge.net

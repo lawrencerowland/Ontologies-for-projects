@@ -1,0 +1,1884 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:sioc="http://rdfs.org/sioc/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:gi2mo="http://purl.org/gi2mo/ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:tags="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+    xmlns:doap="http://usefulinc.com/ns/doap#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:acl="http://www.w3.org/ns/auth/acl#"
+    xmlns:scot="http://scot-project.org/scot/ns#"
+  xml:base="http://purl.org/gi2mo/ns">
+  <owl:Ontology rdf:about="">
+    <rdfs:comment xml:lang="en">Generic Idea and Innovation Management Ontology (GI2MO) - an ontology designed to annotate and describe resources gathered inside Idea Management Systems. The primary goal of the ontology is to cover all knowledge gathered in those systems and provide interoperability between distributed Idea Management Systems as well as other enterprise systems and the World Wide Web.</rdfs:comment>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >0.6</owl:versionInfo>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/</rdfs:seeAlso>
+    <rdfs:label xml:lang="en">GI2MO Ontology</rdfs:label>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://xmlns.com/foaf/0.1/</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">Agent</rdfs:label>
+    <rdfs:comment xml:lang="en">Description of a person modelled with FOAF ontology</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="IdeaStatus">
+    <rdfs:label xml:lang="en">IdeaStatus</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">An instance of this class describes status that idea and indicates the position of the idea in the Idea Management life cycle (e.g. Draft, Implemented, Deployed etc.) 
+
+For a list of recommended instances of this class see the individuals list associated to this class in the ontology definition.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://usefulinc.com/ns/doap#Project">
+    <rdfs:label xml:lang="en">Project</rdfs:label>
+    <rdfs:comment xml:lang="en">Describes a project scheduled to implement an idea (e.g. a software project or a industrial production process). The description is modelled with DOAP ontology.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://usefulinc.com/ns/doap</rdfs:isDefinedBy>
+  </owl:Class>
+  <owl:Class rdf:ID="AccessType">
+    <rdfs:comment xml:lang="en">Defines access type to a resouce. See class instances for possible options.</rdfs:comment>
+    <rdfs:label xml:lang="en">AccessType</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:Class>
+  <owl:Class rdf:ID="TextualReview">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Review"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">TextualReview</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">An instance of this class models a textual review of any kind attached to the idea.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">Concept</rdfs:label>
+    <rdfs:comment xml:lang="en">An instance of this class is used in Gi2MO Ontology to represent a category defined to classify ideas or other assets in the Idea Management system.
+
+For ideas predefined categories are commonly used in many systems to group ideas by topic (e.g. in IM system for computer equipment vendor categories could be Desktops; Latops etc.). 
+For reviews this property can be used to groups reviews by type (e.g. "Return of Investment" , "Customer Benefit" , "Cost anslysis" etc.)</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://xmlns.com/foaf/0.1/OnlineAccount">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://xmlns.com/foaf/0.1/</rdfs:isDefinedBy>
+  </owl:Class>
+  <owl:Class rdf:about="http://scot-project.org/scot/ns#Tag">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://scot-project.org/scot/ns</rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.holygoat.co.uk/owl/redwood/0.1/tags/Tag"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Category">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">An instance of this class represents a category defined to classify ideas or other assets in the Idea Management system.
+
+For ideas predefined categories are commonly used in many systems to group ideas by topic (e.g. in IM system for computer equipment vendor categories could be Desktops; Latops etc.). 
+For reviews this property can be used to groups reviews by type (e.g. "Return of Investment" , "Customer Benefit" , "Cost anslysis" etc.)</rdfs:comment>
+    <rdfs:comment xml:lang="en">Depracatied. Use skos:Concept instead to describe categories for idea and other assets Idea Management system.</rdfs:comment>
+    <rdfs:label xml:lang="en">Category</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
+  </owl:Class>
+  <owl:Class rdf:ID="UpDownRating">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Rating"/>
+    </rdfs:subClassOf>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">UpDownRating</rdfs:label>
+    <rdfs:comment xml:lang="en">An instance of this class describes a rating type where users only vote up or down, without any particular grading scale.
+
+In case of modeling a single vote ratingValue can be set to 1 or -1.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="MinMaxRating">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">An instance of this class describes a rating where users giving votes have to select a value from a predefined scale (for example 1..10).</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Rating"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">MinMaxRating</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#Review">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">An instance of this class indentifies review of a idea. This can be, a textual review, a rating or any kind of assessment made by a number people (e.g. star reviews done by users but also idea assessment made by internal company reviewers).
+
+The instance of this class can be used both to describe a single review action (connected to a user thus having hasCreator property) or a global review summary (e.g. description summerizion all votes and combined rating value).
+
+If not sufficient is recommended to extend this class via inheritace mechanism and add additional type of idea assessment that is particular for a given implementation of Idea Management System.</rdfs:comment>
+    <rdfs:label xml:lang="en">Review</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="IdeaCategory">
+    <rdfs:label xml:lang="en">IdeaCategory</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
+    <rdfs:comment xml:lang="en">Depracated. Use gi2mo:Categorty instead to described categories for idea and other assets Idea Management system.</rdfs:comment>
+    <rdfs:comment xml:lang="en">An instance of this class represents a category defined to classify ideas in the Idea Management system.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="AccessContolList">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">An instance of this class indicates the access rights for particular users to a resource that it is connected to (e.g. write privilages for a given idea or idea contest).</rdfs:comment>
+    <rdfs:label xml:lang="en">AccessControlList</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="VersionInfo">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">VersionInfo</rdfs:label>
+    <rdfs:comment xml:lang="en">An instance of this class allows to attach versioning information to ideas.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Attachment">
+    <rdfs:comment xml:lang="en">An instance of this class represents attachment of any entity in idea management system (e.g. image attachment to idea).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">Attachment</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.holygoat.co.uk/owl/redwood/0.1/tags/Tag">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.holygoat.co.uk/owl/redwood/0.1/tags/</rdfs:isDefinedBy>
+  </owl:Class>
+  <owl:Class rdf:ID="User">
+    <rdfs:comment xml:lang="en">An instance of this class models a user account in the Idea Management system.
+
+User types can be defined by creating UserGroups.</rdfs:comment>
+    <rdfs:label xml:lang="en">User</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:Class>
+  <owl:Class rdf:ID="UserGroup">
+    <rdfs:comment xml:lang="en">An instance of this class allows to group users to reflect the user mangement model popular in many IT systems.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">UserGroup</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="SubmissionMethod">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">An instance of this describes an input interface (e.g. device or software) that was used to submit an idea. This class can be used for Idea Management systems that have many data entry points, for example web forms, collaborative tools, mobile device access etc. 
+
+Also this class can be used to interlink detailed input information encoded via other ontologies through rdfs:seeAlso (e.g. operating system, browser, screen size etc. can be expressed in DCCI Ontology).</rdfs:comment>
+    <rdfs:label xml:lang="en">SubmissionMethod</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="IdeaManagementSystem">
+    <rdfs:label xml:lang="en">IdeaManagementSystem</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">An instance of this class represents an Idea Management Systems as a container for knowledge associated to the Idea Management process. The class modells the relationships that the systems has with it's data.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#Rating">
+    <rdfs:subClassOf rdf:resource="#Review"/>
+    <rdfs:label xml:lang="en">Rating</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">An instance of this class describes a numberical rating attached to the idea. E.g. star review or a quantified reivew.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Metric">
+    <rdfs:label xml:lang="en">Metric</rdfs:label>
+    <rdfs:comment xml:lang="en">This class models any metrics related to Ideas. For exampe Idea Deployment metrics (Revenue, ROI  etc.) or any other metrics associated to the idea as it progresses across the idea pipeline (idea implementation cost, idea assessment costs etc.)
+
+The metric can be associated with an individual  Idea or an Idea contest.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.holygoat.co.uk/owl/redwood/0.1/tags/Tagging">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.holygoat.co.uk/owl/redwood/0.1/tags/</rdfs:isDefinedBy>
+  </owl:Class>
+  <owl:Class rdf:ID="Description">
+    <rdfs:comment xml:lang="en">An instance of this class models any textual description that is added as a supplement to the basic textual content of an entitiy of an Idea Management system. For example this can be a special description of an idea (e.g. Beneficiaries described seperatly from the idea summary).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">Description</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="IdeaContest">
+    <rdfs:comment xml:lang="en">An instance of this class represents the so-called Idea Contests (also referred as "idea campaign", "idea event" etc.). Idea contests are events that stimulate idea submission, bind ideas tematically and attach their collection to a particular time period.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">IdeaContest</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Idea">
+    <rdfs:label xml:lang="en">Idea</rdfs:label>
+    <rdfs:comment xml:lang="en">An instance of this class represents a single idea stored in the Idea Management system.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:Class>
+  <owl:Class rdf:ID="IdeaContestStatus">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">IdeaContestStatus</rdfs:label>
+    <rdfs:comment xml:lang="en">An instance of this class describes status of idea contest. 
+
+For a list of recommended instances of this class see the individuals list associated to this class in the ontology definition.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Comment">
+    <rdfs:comment xml:lang="en">An instance of this class represents comments attached to other entities throughout the idea management system (e.g. comments for idea, idea contests, reviews etc.)</rdfs:comment>
+    <rdfs:label xml:lang="en">Comment</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://scot-project.org/scot/ns#tagging_account">
+    <rdfs:domain rdf:resource="http://www.holygoat.co.uk/owl/redwood/0.1/tags/Tagging"/>
+    <rdfs:comment xml:lang="en">Indicates user account (gi2mo:user in particular) that has tagged a resource</rdfs:comment>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://scot-project.org/scot/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">tagging_account</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="describesSameObject">
+    <rdfs:label xml:lang="en">describesSameObject</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <owl:inverseOf rdf:resource="#describesSameObject"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:ID="hasSimilar"/>
+    </rdfs:subPropertyOf>
+    <rdfs:comment xml:lang="en">Points to an idea that describes innovation for the same object or topic.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isVersionInfoOf">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasVersionInfo"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="#VersionInfo"/>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#IdeaContest"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:comment xml:lang="en">Indicates that version info is attached to a certain idea or other resource under version control.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">isVersionOf</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isAttachmentOf">
+    <rdfs:label xml:lang="en">isAttachementOf</rdfs:label>
+    <rdfs:comment xml:lang="en">Property indicating an attachment being associated to an idea/idea contest.</rdfs:comment>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasAttachment"/>
+    </owl:inverseOf>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="#Attachment"/>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#IdeaContest"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://rdfs.org/sioc/ns#topic">
+    <rdfs:comment xml:lang="en">Indicates a SIOC resource (blog, forum etc.) having a topic which is the Idea from the Idea Management system.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://rdfs.org/sioc/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">topic</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="isTopicOf"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.holygoat.co.uk/owl/redwood/0.1/tags/associatedTag">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.holygoat.co.uk/owl/redwood/0.1/tags/</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">associatedTag</rdfs:label>
+    <rdfs:range rdf:resource="http://www.holygoat.co.uk/owl/redwood/0.1/tags/Tag"/>
+    <rdfs:domain rdf:resource="http://www.holygoat.co.uk/owl/redwood/0.1/tags/Tagging"/>
+    <rdfs:comment xml:lang="en">Point to a scot:Tag that has been created or referenced as a results of tagging activity.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasDuplicate">
+    <rdfs:subPropertyOf rdf:resource="#describesSameObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="#Idea"/>
+    <rdfs:range rdf:resource="#Idea"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="isDuplicateOf"/>
+    </owl:inverseOf>
+    <rdfs:comment xml:lang="en">Indicates that some other idea has duplicated partially or fully the content of the currently described one.</rdfs:comment>
+    <rdfs:label xml:lang="en">hasDuplicate</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isCommentOf">
+    <rdfs:label xml:lang="en">isCommentOf</rdfs:label>
+    <rdfs:domain rdf:resource="#Comment"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasComment"/>
+    </owl:inverseOf>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Review"/>
+          <owl:Class rdf:about="#IdeaContest"/>
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#IdeaStatus"/>
+          <owl:Class rdf:about="#Comment"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:comment xml:lang="en">Property indicating an comment being attached to a certain resource.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="generalizes">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="details"/>
+    </owl:inverseOf>
+    <rdfs:comment xml:lang="en">Indicates that the currently described idea presents a more broad perspective than some other idea and encapsulates it on a more generic level.</rdfs:comment>
+    <rdfs:label xml:lang="en">generalizes</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:ID="complements"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasComment">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#IdeaContest"/>
+          <owl:Class rdf:about="#IdeaStatus"/>
+          <owl:Class rdf:about="#Review"/>
+          <owl:Class rdf:about="#Comment"/>
+          <owl:Class rdf:about="#Attachment"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label xml:lang="en">hasComment</rdfs:label>
+    <rdfs:range rdf:resource="#Comment"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <owl:inverseOf rdf:resource="#isCommentOf"/>
+    <rdfs:comment xml:lang="en">Property indicating an idea or other entity having a comment.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isDescribedIn">
+    <rdfs:domain rdf:resource="#Idea"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="describesPartOf"/>
+    </owl:inverseOf>
+    <rdfs:range rdf:resource="#Idea"/>
+    <rdfs:comment xml:lang="en">Indicates that an idea (as a whole) is described in the text of another idea.
+
+For example: single complex idea describes improving a laptop model and can include ideas about new keyboard, new screen that are also submitted as seperate ideas by other users.</rdfs:comment>
+    <rdfs:subPropertyOf>
+      <owl:SymmetricProperty rdf:ID="hasRelated"/>
+    </rdfs:subPropertyOf>
+    <rdfs:label xml:lang="en">isDescribedPartiallyBy</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isStatusOf">
+    <rdfs:comment xml:lang="en">Indicates Status being assigned to a particular idea or idea contest.</rdfs:comment>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasStatus"/>
+    </owl:inverseOf>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#IdeaStatus"/>
+          <owl:Class rdf:about="#IdeaContestStatus"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label xml:lang="en">isStatusOf</rdfs:label>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#IdeaContest"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasSubCategory">
+    <rdfs:comment xml:lang="en">Describes relationship between categories where one is classified as a part of another.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Deprecated. Use skos:narrower instead</rdfs:comment>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Category"/>
+          <owl:Class rdf:about="#IdeaCategory"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:label xml:lang="en">hasSubCategory</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedProperty"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Category"/>
+          <owl:Class rdf:about="#IdeaCategory"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasTopCategory"/>
+    </owl:inverseOf>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isCategoryOf">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Property indicating the idea that a category characterises a particular entity in the Idea Management System.</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#IdeaCategory"/>
+          <owl:Class rdf:about="#Category"/>
+          <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label xml:lang="en">isCategoryOf</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasCategory"/>
+    </owl:inverseOf>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#Review"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasNextVersion">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">If exists, this property points to an Idea Object that is the next version of the described idea. New version of an idea can introduce new relationship, new idea content, split authorship etc.</rdfs:comment>
+    <rdfs:range rdf:resource="#Idea"/>
+    <rdfs:domain rdf:resource="#Idea"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasPreviousVersion"/>
+    </owl:inverseOf>
+    <rdfs:label xml:lang="en">hasNextVersion</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasCreator">
+    <rdfs:label xml:lang="en">hasCreator</rdfs:label>
+    <rdfs:comment xml:lang="en">Property indicating an idea being created by a certain User.</rdfs:comment>
+    <rdfs:range rdf:resource="#User"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="isCreatorOf"/>
+    </owl:inverseOf>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#Comment"/>
+          <owl:Class rdf:about="#IdeaContest"/>
+          <owl:Class rdf:about="#Review"/>
+          <owl:Class rdf:about="#Description"/>
+          <owl:Class rdf:about="#Metric"/>
+          <owl:Class rdf:about="#Attachment"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasAccessRight">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">hasAccessRight</rdfs:label>
+    <rdfs:range rdf:resource="#AccessType"/>
+    <rdfs:domain rdf:resource="#AccessContolList"/>
+    <rdfs:comment xml:lang="en">Indicates that access control list describes privilages for  a certain type of access right.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasTagging">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="#Idea"/>
+    <rdfs:comment xml:lang="en">Indicates that an idea has been tagged by a certain person at a certain point of time. The following property points to a class that describes an activity of tagging while gi2mo:hasTag points to a Tag itself.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.holygoat.co.uk/owl/redwood/0.1/tags/Tagging"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.holygoat.co.uk/owl/redwood/0.1/tags/taggedResource"/>
+    </owl:inverseOf>
+    <rdfs:label xml:lang="en">hasTag</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasIdea">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="#IdeaManagementSystem"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >hasIdea</rdfs:label>
+    <rdfs:range rdf:resource="#Idea"/>
+    <rdfs:comment xml:lang="en">Indicates an idea that was posted inside a particular Idea Management System instance.</rdfs:comment>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="isIdeaOf"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isDescriptionOf">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="#Description"/>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#IdeaContest"/>
+          <owl:Class rdf:about="#Idea"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:comment xml:lang="en">This property indicates that the description is attached to a certain idea or another resource in the Idea Management systems (e.g. idea contest).</rdfs:comment>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasDescription"/>
+    </owl:inverseOf>
+    <rdfs:label xml:lang="en">isDescriptionOf</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isIdeaOf">
+    <rdfs:label xml:lang="en">isIdeaOf</rdfs:label>
+    <owl:inverseOf rdf:resource="#hasIdea"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Indicates an Idea Management System in which the idea has been posted.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#describesPartOf">
+    <owl:inverseOf rdf:resource="#isDescribedIn"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="#Idea"/>
+    <rdfs:subPropertyOf>
+      <owl:SymmetricProperty rdf:about="#hasRelated"/>
+    </rdfs:subPropertyOf>
+    <rdfs:label xml:lang="en">describesPartOf</rdfs:label>
+    <rdfs:range rdf:resource="#Idea"/>
+    <rdfs:comment xml:lang="en">Indicates that an idea incudes a description of what has been proposed in another idea but they might not have been merged. 
+
+For example: single complex idea describes improving a laptop model and can include ideas about new keyboard, new screen that are submitted also as seperate ideas by other users.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasStatus">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#IdeaContest"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#IdeaStatus"/>
+          <owl:Class rdf:about="#IdeaContestStatus"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:comment xml:lang="en">Property indicating an Idea or IdeaContest have a given status. In case of ideas, this gives information about the position of the idea in the idea life cycle (e.g. newly submited idea, under review, implmented etc.).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <owl:inverseOf rdf:resource="#isStatusOf"/>
+    <rdfs:label xml:lang="en">hasStatus</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#complements">
+    <rdfs:label xml:lang="en">complements</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Indicates ideas that complete each other (e.g. one idea supplementing a solution ommited by the other but necessary for implementation).</rdfs:comment>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:ID="extends"/>
+    </rdfs:subPropertyOf>
+    <owl:inverseOf rdf:resource="#complements"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:comment xml:lang="en">Describes relationship between categories in Idea Management System, where one is classified as a part of another.</rdfs:comment>
+    <rdfs:label xml:lang="en">broader</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrower"/>
+    </owl:inverseOf>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasReview">
+    <rdfs:label xml:lang="en">hasReview</rdfs:label>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#Comment"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:comment xml:lang="en">Indicates an idea having a reivew</rdfs:comment>
+    <rdfs:range rdf:resource="#Review"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="isReviewOf"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasNextVersionInfo">
+    <rdfs:domain rdf:resource="#VersionInfo"/>
+    <rdfs:range rdf:resource="#VersionInfo"/>
+    <rdfs:comment xml:lang="en">If exists, this property points to version information of idea created after the ones describe by this version.</rdfs:comment>
+    <rdfs:label xml:lang="en">hasNextVersionInfo</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasPreviousVersionInfo"/>
+    </owl:inverseOf>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasCategory">
+    <rdfs:comment xml:lang="en">Property indicating the category of idea or a review.</rdfs:comment>
+    <rdfs:label xml:lang="en">hasCategory</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#Review"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#IdeaCategory"/>
+          <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <owl:inverseOf rdf:resource="#isCategoryOf"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#extends">
+    <rdfs:subPropertyOf rdf:resource="#describesSameObject"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="isExtendedBy"/>
+    </owl:inverseOf>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:comment xml:lang="en">Indicates that the current idea is an extension to some other idea (e.g. adds some new concepts or proposes to do some innovative thing in a different way).</rdfs:comment>
+    <rdfs:label xml:lang="en">extends</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isReviewOf">
+    <rdfs:range rdf:resource="#Idea"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="#Review"/>
+    <rdfs:comment xml:lang="en">Indicates a review being assigned to an idea.</rdfs:comment>
+    <rdfs:label xml:lang="en">isReviewOf</rdfs:label>
+    <owl:inverseOf rdf:resource="#hasReview"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="describesRelatedObject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">describesRelatedObject</rdfs:label>
+    <rdfs:comment xml:lang="en">Points to an idea that describes innovation for a different object or topic but somehow related to the current one (e.g. one object being part of the other, objects in offering of the same company branch, objects of similar use etc.).</rdfs:comment>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="#hasSimilar"/>
+    </rdfs:subPropertyOf>
+    <owl:inverseOf rdf:resource="#describesRelatedObject"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isTopicOf">
+    <rdfs:label xml:lang="en">isTopicOf</rdfs:label>
+    <owl:inverseOf rdf:resource="http://rdfs.org/sioc/ns#topic"/>
+    <rdfs:domain rdf:resource="#Idea"/>
+    <rdfs:comment xml:lang="en">Indicates that an idea is a topic of some other resource. (e.g. forum, blog post, twitter post, news article etc.)</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:subPropertyOf>
+      <owl:SymmetricProperty rdf:about="#hasRelated"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isSubmissionMethodOf">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Indicates that a submission method has been used to create certain idea.</rdfs:comment>
+    <rdfs:domain rdf:resource="#SubmissionMethod"/>
+    <rdfs:label xml:lang="en">isSubmissionMethodOf</rdfs:label>
+    <rdfs:range rdf:resource="#Idea"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasSubmissionMethod"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isDuplicateOf">
+    <rdfs:subPropertyOf rdf:resource="#describesSameObject"/>
+    <rdfs:label xml:lang="en">isDuplicateOf</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <owl:inverseOf rdf:resource="#hasDuplicate"/>
+    <rdfs:comment xml:lang="en">Indicates that an idea has been marked as duplicating the content of some other. This property can be used to distinguish between ideas that do not duplicate each other (i.e. not identical) but only one idea copying content of the other (and not the other way around).</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isAccountOf">
+    <rdfs:comment xml:lang="en">Indicates that account belongs to a particular person that has a foaf description.</rdfs:comment>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/account"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="#User"/>
+    <rdfs:label xml:lang="en">isAccountOf</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="excludes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:comment xml:lang="en">Indicates ideas that exclude each others implementation, i.e. implementing one of those ideas makes the other implossible to apply (e.g. contradictory ideas, where one proposes addition of particular feature while the other advocates its absence).</rdfs:comment>
+    <rdfs:label xml:lang="en">excludes</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#extends"/>
+    <owl:inverseOf rdf:resource="#excludes"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isAlternativeSolution">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:comment xml:lang="en">Points to an idea that refers to the same object or topic, the same problem but solved in a different way (e.g. adding a new element to a product but in two completely different ways that exlude each other implementation).</rdfs:comment>
+    <owl:inverseOf rdf:resource="#isAlternativeSolution"/>
+    <rdfs:label xml:lang="en">isAlternativeSolution</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#excludes"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isContributorOf">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Indicates a person being a contributor in a certain idea (not the original creator but a participant in idea creation or improval)</rdfs:comment>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasContributor"/>
+    </owl:inverseOf>
+    <rdfs:range rdf:resource="#Idea"/>
+    <rdfs:domain rdf:resource="#User"/>
+    <rdfs:label xml:lang="en">isContributorOf</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasSubmissionMethod">
+    <rdfs:domain rdf:resource="#Idea"/>
+    <rdfs:label xml:lang="en">hasSubmissionMethod</rdfs:label>
+    <rdfs:comment xml:lang="en">Property indicating an Idea being created with a particular submission method or device (e.g. thought web CMS, via call phone etc).</rdfs:comment>
+    <owl:inverseOf rdf:resource="#isSubmissionMethodOf"/>
+    <rdfs:range rdf:resource="#SubmissionMethod"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasPreviousVersionInfo">
+    <owl:inverseOf rdf:resource="#hasNextVersionInfo"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">If exists, this property points to the previous version information of the same idea.</rdfs:comment>
+    <rdfs:range rdf:resource="#VersionInfo"/>
+    <rdfs:domain rdf:resource="#VersionInfo"/>
+    <rdfs:label xml:lang="en">hasPreviousVersionInfo</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasOrigin">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="isOriginOf"/>
+    </owl:inverseOf>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:subPropertyOf>
+      <owl:SymmetricProperty rdf:about="#hasRelated"/>
+    </rdfs:subPropertyOf>
+    <rdfs:comment xml:lang="en">Indicates that an idea origines (was created based on other) idea.</rdfs:comment>
+    <rdfs:label xml:lang="en">hasOrigin</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isOriginOf">
+    <rdfs:label xml:lang="en">isOriginOf</rdfs:label>
+    <owl:inverseOf rdf:resource="#hasOrigin"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:subPropertyOf>
+      <owl:SymmetricProperty rdf:about="#hasRelated"/>
+    </rdfs:subPropertyOf>
+    <rdfs:comment xml:lang="en">Indicates that an idea was the base for creation of some other idea.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/page">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://xmlns.com/foaf/0.1/</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">page</rdfs:label>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:DeprecatedClass rdf:ID="IdeaTag">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+            <rdfs:label xml:lang="en">IdeaTag</rdfs:label>
+            <rdfs:comment xml:lang="en">Depracatied. Use scot:Tag and tags:Tagging instead to describe tags in the Idea Management system.</rdfs:comment>
+            <rdfs:comment xml:lang="en">An instance of this class models tags associates to idea in the Idea Management system.</rdfs:comment>
+          </owl:DeprecatedClass>
+          <owl:Class rdf:about="#Review"/>
+          <owl:Class rdf:about="#IdeaCategory"/>
+          <owl:Class rdf:about="#User"/>
+          <owl:Class rdf:about="#IdeaContest"/>
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#Category"/>
+          <owl:Class rdf:about="#IdeaStatus"/>
+          <owl:Class rdf:about="#IdeaManagementSystem"/>
+          <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:comment xml:lang="en">Describes the original web resource that the class models.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+    <owl:inverseOf rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">narrower</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Describes relationship between categories in Idea Management System, where one is classified as a part of another.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasAccessContol">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">hasAccessControl</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="isAccessControlOf"/>
+    </owl:inverseOf>
+    <rdfs:range rdf:resource="#AccessContolList"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#IdeaContest"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:comment xml:lang="en">Property indicating an Idea/idea contest having certain collaborations permissions (e.g. public, private, editable for all etc). In case of Idea Contests this propery can be used to indicate who can take part in the competition.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isAccessControlOf">
+    <rdfs:comment xml:lang="en">Property indicating that access control list is attached to a certain resource (e.g. idea). In case of Idea Contests this propery can be used to indicate who can take part in the competition.</rdfs:comment>
+    <rdfs:label xml:lang="en">isAccessControlOf</rdfs:label>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#IdeaContest"/>
+          <owl:Class rdf:about="#Idea"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <owl:inverseOf rdf:resource="#hasAccessContol"/>
+    <rdfs:domain rdf:resource="#AccessContolList"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasAvatar">
+    <rdfs:domain rdf:resource="#User"/>
+    <rdfs:label xml:lang="en">hasAvatar</rdfs:label>
+    <rdfs:comment xml:lang="en">Point to an avatar (picture) of a user</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isMetricOf">
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#IdeaContest"/>
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#User"/>
+          <owl:Class rdf:about="#IdeaManagementSystem"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:label xml:lang="en">isMetricOf</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates that a metric is associated to and idea or idea contest</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="#Metric"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasMetric"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasMember">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">hasMember</rdfs:label>
+    <rdfs:comment xml:lang="en">Describes Access Contol List/ UserGroup having a certain member(s).</rdfs:comment>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="isMemberOf"/>
+    </owl:inverseOf>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#AccessContolList"/>
+          <owl:Class rdf:about="#UserGroup"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#User"/>
+          <owl:Class rdf:about="#UserGroup"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasImplementation">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">hasImplementation</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates idea having an implementation as a product or a feature</rdfs:comment>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="isImplementationOf"/>
+    </owl:inverseOf>
+    <rdfs:subPropertyOf>
+      <owl:SymmetricProperty rdf:about="#hasRelated"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasIdeaContest">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="isIdeaContestOf"/>
+    </owl:inverseOf>
+    <rdfs:range rdf:resource="#IdeaContest"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#IdeaManagementSystem"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:comment xml:lang="en">Property indicating an idea being part of a Idea Contest or an Idea Contest being posted within an IdeaManagementSystem instance .</rdfs:comment>
+    <rdfs:label xml:lang="en">hasIdeaContest</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isMergedInto">
+    <rdfs:range rdf:resource="#Idea"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="isMergedFrom"/>
+    </owl:inverseOf>
+    <rdfs:subPropertyOf>
+      <owl:SymmetricProperty rdf:about="#hasRelated"/>
+    </rdfs:subPropertyOf>
+    <rdfs:domain rdf:resource="#Idea"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >isMergedInto</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates an idea has been marged into a "master" idea.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isMergedFrom">
+    <rdfs:label xml:lang="en">isMergedFrom</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates that an Idea was created out of merging other ideas or resources</rdfs:comment>
+    <rdfs:domain rdf:resource="#Idea"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:range rdf:resource="#Idea"/>
+    <rdfs:subPropertyOf>
+      <owl:SymmetricProperty rdf:about="#hasRelated"/>
+    </rdfs:subPropertyOf>
+    <owl:inverseOf rdf:resource="#isMergedInto"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isMemberOf">
+    <owl:inverseOf rdf:resource="#hasMember"/>
+    <rdfs:label xml:lang="en">isMemberOf</rdfs:label>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#User"/>
+          <owl:Class rdf:about="#UserGroup"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Describes that a User or a UserGroup are a member of other entity (Access Control List, UserGroup)</rdfs:comment>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#AccessContolList"/>
+          <owl:Class rdf:about="#UserGroup"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="linksTo">
+    <rdfs:label xml:lang="en">linksTo</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="isLinkedBy"/>
+    </owl:inverseOf>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Describes idea linking to other assets (e.g. can be used to list all hyperlinks associated in the idea summary)</rdfs:comment>
+    <rdfs:subPropertyOf>
+      <owl:SymmetricProperty rdf:about="#hasRelated"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isAlternativeIdea">
+    <rdfs:subPropertyOf rdf:resource="#excludes"/>
+    <owl:inverseOf rdf:resource="#isAlternativeIdea"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">isAlternativeIdea</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:comment xml:lang="en">Indicates a completely different idea that in effect is impossible to implement together with this one (e.g. ideaA: add some element to an object, ideaB: remove an object entirely from the offering).</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isLinkedBy">
+    <rdfs:subPropertyOf>
+      <owl:SymmetricProperty rdf:about="#hasRelated"/>
+    </rdfs:subPropertyOf>
+    <owl:inverseOf rdf:resource="#linksTo"/>
+    <rdfs:range rdf:resource="#Idea"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">isMentionedBy</rdfs:label>
+    <rdfs:comment xml:lang="en">This property can be used to link idea with any other entities that mention it (e.g. via links or citations). This can include both entities inside the Idea Management system, however also objects outside the system (e.g. Twitter comments, forums posts, blogs posts etc.).</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasSimilar">
+    <rdfs:comment xml:lang="en">Indicates similar idea but not duplicates (e.g. idea about improving car appearance, and idea about car speed; both can mention new type of tires but also a number of different elements).</rdfs:comment>
+    <owl:inverseOf rdf:resource="#hasSimilar"/>
+    <rdfs:label xml:lang="en">hasSimilar</rdfs:label>
+    <rdfs:subPropertyOf>
+      <owl:SymmetricProperty rdf:about="#hasRelated"/>
+    </rdfs:subPropertyOf>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:domain rdf:resource="#Idea"/>
+    <rdfs:range rdf:resource="#Idea"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isExtendedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:comment xml:lang="en">Indicates that the described idea is a subject of extension by some other idea (e.g. some other idea details the current one or adds some new point of view on the same topic).</rdfs:comment>
+    <rdfs:label xml:lang="en">isExtendedBy</rdfs:label>
+    <owl:inverseOf rdf:resource="#extends"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:subPropertyOf rdf:resource="#describesSameObject"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.holygoat.co.uk/owl/redwood/0.1/tags/taggedResource">
+    <owl:inverseOf rdf:resource="#hasTagging"/>
+    <rdfs:label xml:lang="en">taggedResource</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.holygoat.co.uk/owl/redwood/0.1/tags/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="http://www.holygoat.co.uk/owl/redwood/0.1/tags/Tagging"/>
+    <rdfs:comment xml:lang="en">Indicates that tagging activity refers to a certain idea.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasInputEndpoint">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">hasEndpoint</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates the data entry endpoint of the submission method. This can be a web form URL, a web service address, a device URI etc.</rdfs:comment>
+    <rdfs:domain rdf:resource="#SubmissionMethod"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasMetric">
+    <rdfs:comment xml:lang="en">Associates an idea or idea contest with a metric.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <owl:inverseOf rdf:resource="#isMetricOf"/>
+    <rdfs:range rdf:resource="#Metric"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#IdeaContest"/>
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#User"/>
+          <owl:Class rdf:about="#IdeaManagementSystem"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label xml:lang="en">hasMetric</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasAttachment">
+    <rdfs:range rdf:resource="#Attachment"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#IdeaContest"/>
+          <owl:Class rdf:about="#Comment"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">hasAttachment</rdfs:label>
+    <rdfs:comment xml:lang="en">Property indicating an Idea having an Attachment.</rdfs:comment>
+    <owl:inverseOf rdf:resource="#isAttachmentOf"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isDisjoint">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <owl:inverseOf rdf:resource="#isDisjoint"/>
+    <rdfs:comment xml:lang="en">Indicates that two ideas are not related to each other in any way.</rdfs:comment>
+    <rdfs:subPropertyOf>
+      <owl:SymmetricProperty rdf:about="#hasRelated"/>
+    </rdfs:subPropertyOf>
+    <rdfs:label xml:lang="en">isDisjoint</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isIdeaContestOf">
+    <rdfs:comment xml:lang="en">Indicates an idea that belongs to an idea contest; optionally a Contests being posted in a particular Idea Management System.</rdfs:comment>
+    <owl:inverseOf rdf:resource="#hasIdeaContest"/>
+    <rdfs:label xml:lang="en">isIdeaContestOf</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="#IdeaContest"/>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#IdeaManagementSystem"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isTagOf">
+    <rdfs:label xml:lang="en">isTagOf</rdfs:label>
+    <rdfs:range rdf:resource="#Idea"/>
+    <rdfs:domain rdf:resource="http://scot-project.org/scot/ns#Tag"/>
+    <rdfs:comment xml:lang="en">Indicates that a tag is assigned to a certain Idea or other resourece</rdfs:comment>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasTag"/>
+    </owl:inverseOf>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasVersionInfo">
+    <rdfs:comment xml:lang="en">Indicates that Idea has been modified over time and has more then 1 version</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">hasVersionInfo</rdfs:label>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#IdeaContest"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <owl:inverseOf rdf:resource="#isVersionInfoOf"/>
+    <rdfs:range rdf:resource="#VersionInfo"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isImplementationOf">
+    <rdfs:range rdf:resource="#Idea"/>
+    <owl:inverseOf rdf:resource="#hasImplementation"/>
+    <rdfs:label xml:lang="en">isImplementationOf</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:subPropertyOf>
+      <owl:SymmetricProperty rdf:about="#hasRelated"/>
+    </rdfs:subPropertyOf>
+    <rdfs:comment xml:lang="en">Describes that project is a result of previously submitted idea.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#details">
+    <rdfs:label xml:lang="en">details</rdfs:label>
+    <owl:inverseOf rdf:resource="#generalizes"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="#complements"/>
+    <rdfs:comment xml:lang="en">Indicates that the currently described idea presents a more detailed description of another idea or its element.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasContributor">
+    <rdfs:domain rdf:resource="#Idea"/>
+    <owl:inverseOf rdf:resource="#isContributorOf"/>
+    <rdfs:range rdf:resource="#User"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Indicates that an idea has a particular contributor ( a person that did not create the idea but now activly participates in its improval/evolution)</rdfs:comment>
+    <rdfs:label xml:lang="en">hasContributor</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isCreatorOf">
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#Comment"/>
+          <owl:Class rdf:about="#Review"/>
+          <owl:Class rdf:about="#IdeaContest"/>
+          <owl:Class rdf:about="#Description"/>
+          <owl:Class rdf:about="#Metric"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:label xml:lang="en">isCreatorOf</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <owl:inverseOf rdf:resource="#hasCreator"/>
+    <rdfs:comment xml:lang="en">Property indicating that User is an author of a certain resource.</rdfs:comment>
+    <rdfs:domain rdf:resource="#User"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasPreviousVersion">
+    <rdfs:domain rdf:resource="#Idea"/>
+    <rdfs:label xml:lang="en">hasPreviousVersion</rdfs:label>
+    <rdfs:range rdf:resource="#Idea"/>
+    <rdfs:comment xml:lang="en">If exists, this property points to an idea which is the previous version of the currently described one. Idea versioning can be used to indicate changes in idea relationships, extensions in idea content, or changes in authorship.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <owl:inverseOf rdf:resource="#hasNextVersion"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasTag">
+    <owl:inverseOf rdf:resource="#isTagOf"/>
+    <rdfs:domain rdf:resource="#Idea"/>
+    <rdfs:range rdf:resource="http://scot-project.org/scot/ns#Tag"/>
+    <rdfs:label xml:lang="en">hasTag</rdfs:label>
+    <rdfs:comment xml:lang="en">Property indicating tag associated to the idea - a user created categorization of an idea.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/account">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://xmlns.com/foaf/0.1/</rdfs:isDefinedBy>
+    <owl:inverseOf rdf:resource="#isAccountOf"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasBinaryContent">
+    <rdfs:comment xml:lang="en">Link (URL or URI) to the attachment (file)</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">hasBinaryContent</rdfs:label>
+    <rdfs:domain rdf:resource="#Attachment"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isSupplementOf">
+    <rdfs:comment xml:lang="en">Indicates review being a supplement to another review (e.g. this can be used to model textual information added to Rating Review or to create compound reviews made of many ratings etc.)</rdfs:comment>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasSupplement"/>
+    </owl:inverseOf>
+    <rdfs:range rdf:resource="#Review"/>
+    <rdfs:label xml:lang="en">isSupplementOf</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="#Review"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasSupplement">
+    <rdfs:comment xml:lang="en">Indicates review being a supplement to another review (e.g. this can be used to model textual information added to Rating Review or to create compound reviews made of many ratings etc.)</rdfs:comment>
+    <rdfs:range rdf:resource="#Review"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <owl:inverseOf rdf:resource="#isSupplementOf"/>
+    <rdfs:domain rdf:resource="#Review"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasEditor">
+    <rdfs:label xml:lang="en">hasEditor</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates the user responible for change</rdfs:comment>
+    <rdfs:range rdf:resource="#User"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="#VersionInfo"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="isEditorOf"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isEditorOf">
+    <rdfs:domain rdf:resource="#User"/>
+    <rdfs:label xml:lang="en">isEditorOf</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Indicates that user has created (edited) a certain version of an idea.</rdfs:comment>
+    <rdfs:range rdf:resource="#VersionInfo"/>
+    <owl:inverseOf rdf:resource="#hasEditor"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasDescription">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#IdeaContest"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:comment xml:lang="en">This property indicates that an idea or another entity of the Idea Management systems (e.g. idea contest) has a more broad description then just the standard summary (e.g. idea benefits or idea contest requirements).</rdfs:comment>
+    <rdfs:range rdf:resource="#Description"/>
+    <rdfs:label xml:lang="en">hasDescription</rdfs:label>
+    <owl:inverseOf rdf:resource="#isDescriptionOf"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasTopCategory">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Category"/>
+          <owl:Class rdf:about="#IdeaCategory"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:comment xml:lang="en">Describes relationship between categories where one is classified as a part of another.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Deprecated. Use skos:broader instead</rdfs:comment>
+    <rdfs:label xml:lang="en">hasTopCategory</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedProperty"/>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Category"/>
+          <owl:Class rdf:about="#IdeaCategory"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <owl:inverseOf rdf:resource="#hasSubCategory"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:ObjectProperty>
+  <rdf:Property rdf:about="http://purl.org/dc/terms/creator"/>
+  <owl:DatatypeProperty rdf:ID="fullname">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">fullname</rdfs:label>
+    <rdfs:domain rdf:resource="#User"/>
+    <rdfs:comment xml:lang="en">Users full name. Depending on the culture/nationality can be more then just a joint of gi2mo:firstName+gi2mo:lastName.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="ratingValue">
+    <rdfs:label xml:lang="en">ratingValue</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Numerical value of the rating</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="#Rating"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="startDate">
+    <rdfs:label xml:lang="en">startDate</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates starting date of an event.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#IdeaContest"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="lastName">
+    <rdfs:domain rdf:resource="#User"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">surname</rdfs:label>
+    <rdfs:comment xml:lang="en">Surname of a user.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="firstName">
+    <rdfs:label xml:lang="en">firstName</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">First name of a user.</rdfs:comment>
+    <rdfs:domain rdf:resource="#User"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="metricUnit">
+    <rdfs:domain rdf:resource="#Metric"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Identified in what kind of unit metric is defined (e.g. for money related metrics it can be currency: USD, EUR, for effort related metrics it can be KLOC etc.).</rdfs:comment>
+    <rdfs:label xml:lang="en">metricUnit</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="currentVersion">
+    <rdfs:domain rdf:resource="#Idea"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Property used for idea versioning, indicates that the object describes the most up to date version of an idea.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">currentVersion</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="content">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">content</rdfs:label>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Comment"/>
+          <owl:Class rdf:about="#TextualReview"/>
+          <owl:Class rdf:about="#Description"/>
+          <owl:Class rdf:about="#IdeaContest"/>
+          <owl:Class rdf:about="#Idea"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Textual content associated to an entity (e.g. user entered idea summary,  comment text, review text etc.)</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="endDate">
+    <rdfs:comment xml:lang="en">Indicates end date of an event.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">endDate</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="#IdeaContest"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="ratingDownValue">
+    <rdfs:label xml:lang="en">ratingDownValue</rdfs:label>
+    <rdfs:domain rdf:resource="#UpDownRating"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:comment xml:lang="en">Amount of times people voted down.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/dc/terms/</rdfs:isDefinedBy>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#IdeaContest"/>
+          <owl:Class rdf:about="#Review"/>
+          <owl:Class rdf:about="#IdeaCategory"/>
+          <owl:DeprecatedClass rdf:about="#IdeaTag"/>
+          <owl:Class rdf:about="#UserGroup"/>
+          <owl:Class rdf:about="#Description"/>
+          <owl:Class rdf:about="#SubmissionMethod"/>
+          <owl:Class rdf:about="#Category"/>
+          <owl:Class rdf:about="#Metric"/>
+          <owl:Class rdf:about="#Attachment"/>
+          <owl:Class rdf:about="#IdeaManagementSystem"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">title</rdfs:label>
+    <rdfs:comment xml:lang="en">Describes the title of an entity (e.g. idea title, idea contest tile, review title etc.).</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.holygoat.co.uk/owl/redwood/0.1/tags/taggedOn">
+    <rdfs:comment xml:lang="en">Indicates that date tagging activity took place</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.holygoat.co.uk/owl/redwood/0.1/tags/Tagging"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.holygoat.co.uk/owl/redwood/0.1/tags/</rdfs:isDefinedBy>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="mimeType">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Indicates the MIME type of the attachment (e.g. image/jpg, audio/mp3)</rdfs:comment>
+    <rdfs:domain rdf:resource="#Attachment"/>
+    <rdfs:label xml:lang="en">mimeType</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="mboxSha1sum">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">user mailbox sha1 sum</rdfs:comment>
+    <rdfs:domain rdf:resource="#User"/>
+    <rdfs:label xml:lang="en">mboxSha1sum</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:comment xml:lang="en">A label used for naming categories of ideas, reviews etc. in Gi2MO Ontology.</rdfs:comment>
+    <rdfs:label xml:lang="en">prefLabel</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="metricValue">
+    <rdfs:domain rdf:resource="#Metric"/>
+    <rdfs:label xml:lang="en">metricValue</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Identified the value of a metric</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="modificationType">
+    <rdfs:label xml:lang="en">modificationType</rdfs:label>
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+          >DELETE</rdf:first>
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:rest rdf:parseType="Resource">
+              <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+              >CREATE</rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:rest>
+            <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >MODIFY</rdf:first>
+          </rdf:rest>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Indicates what type of modification has been performed (edit, delete etc)</rdfs:comment>
+    <rdfs:domain rdf:resource="#VersionInfo"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="versionDate">
+    <rdfs:domain rdf:resource="#VersionInfo"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">versionDate</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Version creation or modification date.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="maxRatingValue">
+    <rdfs:comment xml:lang="en">Defines maximal possible value for the rating.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="#MinMaxRating"/>
+    <rdfs:label xml:lang="en">maxRatingValue</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="minRatingValue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:comment xml:lang="en">Defines minimal possible value for the rating.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >minRatingValue</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="#MinMaxRating"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/created">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/dc/terms/</rdfs:isDefinedBy>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#Comment"/>
+          <owl:Class rdf:about="#IdeaContest"/>
+          <owl:Class rdf:about="#Review"/>
+          <owl:Class rdf:about="#Description"/>
+          <owl:Class rdf:about="#Metric"/>
+          <owl:Class rdf:about="#Attachment"/>
+          <owl:Class rdf:about="#User"/>
+          <owl:Class rdf:about="#IdeaManagementSystem"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:comment xml:lang="en">Date of creation of the resource.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">Date Created</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="ratingUpValue">
+    <rdfs:label xml:lang="en">ratingUpValue</rdfs:label>
+    <rdfs:domain rdf:resource="#UpDownRating"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Amount of times people voted up.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/accountName">
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://xmlns.com/foaf/0.1/</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Indicates account name of the idea management system user</rdfs:comment>
+    <rdfs:label xml:lang="en">accountName</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="accessRight">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedProperty"/>
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+          >READ</rdf:first>
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >WRITE</rdf:first>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </rdf:rest>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Describes type of access privileges (READ, WRITE)</rdfs:comment>
+    <rdfs:comment xml:lang="en">Deprecated. Use gi2mo:hasAccessRight object property instead.</rdfs:comment>
+    <rdfs:label xml:lang="en">accessRight</rdfs:label>
+    <rdfs:domain rdf:resource="#AccessContolList"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">definition</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:comment xml:lang="en">Property used to describe  a category of ideas, reviews etc. in Gi2MO Ontology.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="organizationPosition">
+    <rdfs:comment xml:lang="en">Describes the occupation of the employee in the organizaiton.</rdfs:comment>
+    <rdfs:label xml:lang="en">organizationPosition</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#User"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.holygoat.co.uk/owl/redwood/0.1/tags/name">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.holygoat.co.uk/owl/redwood/0.1/tags/</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="http://www.holygoat.co.uk/owl/redwood/0.1/tags/Tag"/>
+    <rdfs:comment xml:lang="en">tag name</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/description">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#IdeaStatus"/>
+          <owl:Class rdf:about="#UserGroup"/>
+          <owl:Class rdf:about="#IdeaCategory"/>
+          <owl:Class rdf:about="#SubmissionMethod"/>
+          <owl:Class rdf:about="#Review"/>
+          <owl:Class rdf:about="#Category"/>
+          <owl:Class rdf:about="#Metric"/>
+          <owl:Class rdf:about="#IdeaManagementSystem"/>
+          <owl:Class rdf:about="#IdeaContestStatus"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label xml:lang="en">description</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/dc/terms/</rdfs:isDefinedBy>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Text providing a description of an entity (e.g. idea category or idea contest description)</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="versionNumber">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Indicates version number</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="#VersionInfo"/>
+    <rdfs:label xml:lang="en">versionNumber</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:SymmetricProperty rdf:ID="proceeds">
+    <rdfs:comment xml:lang="en">Indicates that the implementation of this idea should come before some other idea (i.e. the some other idea is a dependent on implementation of the described one).</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf>
+      <owl:SymmetricProperty rdf:about="#hasRelated"/>
+    </rdfs:subPropertyOf>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <owl:inverseOf>
+      <owl:SymmetricProperty rdf:ID="follows"/>
+    </owl:inverseOf>
+    <rdfs:range rdf:resource="#Idea"/>
+    <rdfs:label xml:lang="en">proceeds</rdfs:label>
+  </owl:SymmetricProperty>
+  <owl:SymmetricProperty rdf:about="#follows">
+    <rdfs:comment xml:lang="en">Indicates that the implementation of this idea should follow some other idea (i.e. the some other idea is a requirement for implementation of the described one).</rdfs:comment>
+    <rdfs:subPropertyOf>
+      <owl:SymmetricProperty rdf:about="#hasRelated"/>
+    </rdfs:subPropertyOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >follows</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="#proceeds"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:range rdf:resource="#Idea"/>
+  </owl:SymmetricProperty>
+  <owl:SymmetricProperty rdf:about="#hasRelated">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Describes relations between ideas and other resources, without specifying exact link type.</rdfs:comment>
+    <owl:inverseOf rdf:resource="#hasRelated"/>
+    <rdfs:domain rdf:resource="#Idea"/>
+    <rdfs:label xml:lang="en">hasRelated</rdfs:label>
+  </owl:SymmetricProperty>
+  <gi2mo:IdeaStatus rdf:ID="Implemented">
+    <gi2mo:description xml:lang="en">Idea that has been implemented</gi2mo:description>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">Implemented</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates an idea that was accepted and later implemented.</rdfs:comment>
+  </gi2mo:IdeaStatus>
+  <gi2mo:IdeaContestStatus rdf:ID="Closed">
+    <rdfs:label xml:lang="en">Closed</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates an idea contest is closed, no loger accepting idea submissions and has been kept in the system for achival purposes and possible future reference.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </gi2mo:IdeaContestStatus>
+  <owl:DeprecatedProperty rdf:ID="ideasNumber">
+    <rdfs:comment xml:lang="en">Number of ideas posted by a user</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="#User"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">ideasNumber</rdfs:label>
+  </owl:DeprecatedProperty>
+  <gi2mo:IdeaStatus rdf:ID="Rejected">
+    <gi2mo:description xml:lang="en">Idea that was rejected and not choosen to implement</gi2mo:description>
+    <rdfs:label xml:lang="en">Rejected</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Indicates an idea that has been rejected and shall not be implemented.</rdfs:comment>
+  </gi2mo:IdeaStatus>
+  <gi2mo:IdeaStatus rdf:ID="PartialyImplemented">
+    <gi2mo:description xml:lang="en">Idea part of which has been implemented</gi2mo:description>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Indicates that an ideas has been accepted for implementation but only partially implemented.</rdfs:comment>
+    <rdfs:label xml:lang="en">PartialyImplemented</rdfs:label>
+  </gi2mo:IdeaStatus>
+  <gi2mo:AccessType rdf:ID="WriteAccess">
+    <rdfs:comment xml:lang="en">Write access right</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">WriteAccess</rdfs:label>
+  </gi2mo:AccessType>
+  <gi2mo:IdeaStatus rdf:ID="UnderReview">
+    <gi2mo:description xml:lang="en">Idea being currently under review</gi2mo:description>
+    <rdfs:comment xml:lang="en">Indicates an idea being under review.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">UnderReview</rdfs:label>
+  </gi2mo:IdeaStatus>
+  <owl:DeprecatedProperty rdf:ID="created">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#Description"/>
+          <owl:Class rdf:about="#Review"/>
+          <owl:Class rdf:about="#IdeaContest"/>
+          <owl:Class rdf:about="#Comment"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Creation date</rdfs:comment>
+    <rdfs:comment xml:lang="en">Deprecated. Use dcterms:created instead.</rdfs:comment>
+    <rdfs:label xml:lang="en">created</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:DeprecatedProperty>
+  <owl:DeprecatedProperty rdf:ID="description">
+    <rdfs:comment xml:lang="en">Text providing a description of an entity (e.g. idea category or idea contest description)</rdfs:comment>
+    <rdfs:comment xml:lang="en">Deprecated. Use dcterms:description instead.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">description</rdfs:label>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#IdeaCategory"/>
+          <owl:Class rdf:about="#UserGroup"/>
+          <owl:Class rdf:about="#IdeaStatus"/>
+          <owl:Class rdf:about="#Review"/>
+          <owl:Class rdf:about="#SubmissionMethod"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:DeprecatedProperty>
+  <owl:DeprecatedClass rdf:ID="Project">
+    <rdfs:comment xml:lang="en">Depracatied. Use doap:project instead.</rdfs:comment>
+    <rdfs:label xml:lang="en">Project</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </owl:DeprecatedClass>
+  <gi2mo:IdeaStatus rdf:ID="Accepted">
+    <rdfs:comment xml:lang="en">Indicates an idea that has been accepted for implementation.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <gi2mo:description xml:lang="en">Idea accepted for implementation</gi2mo:description>
+    <rdfs:label xml:lang="en">Accepted</rdfs:label>
+  </gi2mo:IdeaStatus>
+  <gi2mo:IdeaContestStatus rdf:ID="PendingReviews">
+    <rdfs:label xml:lang="en">PendingReviews</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Indicates that an idea contest is currently closed for submissions but the subbmited ideas have not recieved their reviews and their statuses may be subject of change. 
+
+This status should be used when the idea contest organizers decie to close submissions and start review process to choose the winners of the competition.</rdfs:comment>
+  </gi2mo:IdeaContestStatus>
+  <owl:DeprecatedProperty rdf:ID="postsNumber">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="#User"/>
+    <rdfs:label xml:lang="en">postsNumber</rdfs:label>
+    <rdfs:comment xml:lang="en">Number of posts done by a user</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:DeprecatedProperty>
+  <owl:DeprecatedProperty rdf:ID="username">
+    <rdfs:label xml:lang="en">username</rdfs:label>
+    <rdfs:domain rdf:resource="#User"/>
+    <rdfs:comment xml:lang="en">Deprecated. Use foaf:accountName instead.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Username of a user.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:DeprecatedProperty>
+  <gi2mo:AccessType rdf:ID="ReadAccess">
+    <rdfs:label xml:lang="en">ReadAccess</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Read access rights</rdfs:comment>
+  </gi2mo:AccessType>
+  <owl:DeprecatedProperty rdf:ID="primaryTopic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Deprecated. Use foaf:page instead</rdfs:comment>
+    <rdfs:comment xml:lang="en">Describes the original web resources that the class models.</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#IdeaContest"/>
+          <owl:Class rdf:about="#Comment"/>
+          <owl:Class rdf:about="#User"/>
+          <owl:Class rdf:about="#Review"/>
+          <owl:Class rdf:about="#IdeaCategory"/>
+          <owl:DeprecatedClass rdf:about="#IdeaTag"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label xml:lang="en">primaryTopic</rdfs:label>
+  </owl:DeprecatedProperty>
+  <gi2mo:IdeaContestStatus rdf:ID="Active">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Indicates an idea contest is active and accepting idea submissions.</rdfs:comment>
+    <rdfs:label xml:lang="en">Active</rdfs:label>
+  </gi2mo:IdeaContestStatus>
+  <owl:DeprecatedProperty rdf:ID="title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Description"/>
+          <owl:Class rdf:about="#Review"/>
+          <owl:DeprecatedClass rdf:about="#IdeaTag"/>
+          <owl:Class rdf:about="#UserGroup"/>
+          <owl:Class rdf:about="#IdeaCategory"/>
+          <owl:Class rdf:about="#IdeaContest"/>
+          <owl:Class rdf:about="#Idea"/>
+          <owl:Class rdf:about="#SubmissionMethod"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">title</rdfs:label>
+    <rdfs:comment xml:lang="en">Describes the title of an entity (e.g. idea title, idea contest tile, review title etc.).</rdfs:comment>
+    <rdfs:comment xml:lang="en">Deprecated. Use dcterms:title instead.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </owl:DeprecatedProperty>
+  <gi2mo:IdeaStatus rdf:ID="Deployed">
+    <rdfs:label xml:lang="en">Deployed</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Indicates an idea that has been implemented as a product and deployed on the market.</rdfs:comment>
+  </gi2mo:IdeaStatus>
+  <gi2mo:IdeaStatus rdf:ID="AlreadyExists">
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="en">Indicates that the following idea has been already implemented the moment it was submitted.</rdfs:comment>
+    <gi2mo:description xml:lang="en">Change proposed by this idea already existed in a product/service etc</gi2mo:description>
+    <rdfs:label xml:lang="en">AlreadyExists</rdfs:label>
+  </gi2mo:IdeaStatus>
+  <gi2mo:IdeaStatus rdf:ID="Draft">
+    <rdfs:label xml:lang="en">Draft</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates an new idea submitted to the system.</rdfs:comment>
+    <gi2mo:description xml:lang="en">Newly submited idea</gi2mo:description>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://purl.org/gi2mo/ns</rdfs:isDefinedBy>
+  </gi2mo:IdeaStatus>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4, Build 533)  http://protege.stanford.edu -->
