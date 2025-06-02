@@ -3,276 +3,444 @@
     "file": "ontologies/2020BFOeasier.ttl",
     "type": "ttl",
     "name": "BFO 2020",
-    "description": ""
+    "description": "",
+    "primary_use": "An upper-level ontology providing generic categories (e.g. object, process, etc.) that serve as a foundation for more specific domain ontologies.",
+    "secondary_use": "Often extended or specialized by other ontologies to ensure consistency; used as a common backbone to integrate diverse domains.",
+    "file_type": "owl",
+    "relevance": "Indirectly relevant – offers a formal base to structure project knowledge and ensure interoperability across domains (conceptual consistency in project data models)."
   },
   {
     "file": "ontologies/2020_02_philosophy_inpho.owl",
     "type": "owl",
     "name": "2020_02_philosophy_inpho",
-    "description": ""
+    "description": "",
+    "primary_use": "A domain ontology for philosophical ideas and thinkers.",
+    "secondary_use": "Can be used as a reference for knowledge management in academic projects or to demonstrate ontology modeling of a complex domain.",
+    "file_type": "owl",
+    "relevance": "Tangential – not specific to project management, but showcases ontology modeling."
   },
   {
     "file": "ontologies/2020_11_Philosphy inpho.owl",
     "type": "owl",
     "name": "2020_11_Philosphy inpho",
-    "description": ""
+    "description": "",
+    "primary_use": "A domain ontology for philosophical ideas and thinkers.",
+    "secondary_use": "Can be used as a reference for knowledge management in academic projects or to demonstrate ontology modeling of a complex domain.",
+    "file_type": "owl",
+    "relevance": "Tangential – not specific to project management, but showcases ontology modeling."
   },
   {
     "file": "ontologies/2022 11 safety ontology.ttl",
     "type": "ttl",
     "name": "2022 11 safety ontology",
-    "description": ""
+    "description": "",
+    "primary_use": "A domain ontology focusing on safety concepts.",
+    "secondary_use": "Can be applied to model safety management plans and link to project risk management.",
+    "file_type": "ttl",
+    "relevance": "Relevant – provides structured vocabulary for safety in projects."
   },
   {
     "file": "ontologies/2022 useful ontologies from protege.txt",
-    "type": "txt",
-    "name": "2022 useful ontologies from protege",
-    "description": ""
-  },
-  {
+@@ -33,133 +49,221 @@
     "file": "ontologies/BFO2020.rdf",
     "type": "rdf",
     "name": "BFO2020",
-    "description": ""
+    "description": "",
+    "primary_use": "An upper-level ontology providing generic categories (e.g. object, process, etc.) that serve as a foundation for more specific domain ontologies.",
+    "secondary_use": "Often extended or specialized by other ontologies to ensure consistency; used as a common backbone to integrate diverse domains.",
+    "file_type": "rdf",
+    "relevance": "Indirectly relevant – offers a formal base to structure project knowledge and ensure interoperability across domains (conceptual consistency in project data models)."
   },
   {
     "file": "ontologies/BFO2020_betterlabels.owl",
     "type": "owl",
     "name": "BFO 2020",
-    "description": ""
+    "description": "",
+    "primary_use": "An upper-level ontology providing generic categories (e.g. object, process, etc.) that serve as a foundation for more specific domain ontologies.",
+    "secondary_use": "Often extended or specialized by other ontologies to ensure consistency; used as a common backbone to integrate diverse domains.",
+    "file_type": "owl",
+    "relevance": "Indirectly relevant – offers a formal base to structure project knowledge and ensure interoperability across domains (conceptual consistency in project data models)."
   },
   {
     "file": "ontologies/Decisions.owl.txt",
     "type": "txt",
     "name": "Decisions.owl",
-    "description": ""
+    "description": "",
+    "primary_use": "An ontology for capturing decision-making concepts, including decisions, decision artifacts, stakeholders, and outcomes.",
+    "secondary_use": "Can be used to document project decisions, rationale, and trace their impacts, and to integrate decision records with project processes for knowledge management.",
+    "file_type": "owl",
+    "relevance": "Directly relevant – helps in modeling and tracking project decisions and governance (e.g. change approvals, design decisions) in a formal way."
   },
   {
     "file": "ontologies/From_archimate_insurance.owl",
     "type": "owl",
     "name": "From_archimate_insurance",
-    "description": ""
+    "description": "",
+    "primary_use": "Models enterprise architecture concepts (ArchiMate framework) in the insurance domain, defining business, application, and technology elements for insurance processes.",
+    "secondary_use": "Can be reused as a template for enterprise architecture modeling in other domains or to integrate insurance domain knowledge into project planning.",
+    "file_type": "owl",
+    "relevance": "Tangential – useful for projects in the insurance industry or those requiring enterprise architecture alignment."
   },
   {
     "file": "ontologies/Innovation0_gi2mo.owl",
     "type": "owl",
     "name": "Innovation0_gi2mo",
-    "description": ""
+    "description": "",
+    "primary_use": "Domain ontology for idea and innovation management systems.",
+    "secondary_use": "Used to enable interoperability between distributed idea management systems and other enterprise systems, allowing exchange of innovation project data and integration with broader knowledge bases.",
+    "file_type": "owl",
+    "relevance": "Relevant – useful for managing innovation proposals and R&D projects. It provides a structure for idea generation, evaluation, and tracking."
   },
   {
     "file": "ontologies/IoTFrameworks.ttl.html",
     "type": "html",
     "name": "IoTFrameworks.ttl",
-    "description": ""
+    "description": "",
+    "primary_use": "An ontology describing Internet of Things frameworks and related concepts.",
+    "secondary_use": "Helps compare and integrate different IoT frameworks by providing a common reference model.",
+    "file_type": "ttl",
+    "relevance": "Moderately relevant – for IoT-related projects, aiding technical decision-making."
   },
   {
     "file": "ontologies/OntoAgile.owl.html",
     "type": "html",
     "name": "OntoAgile.owl",
-    "description": ""
+    "description": "",
+    "primary_use": "An ontology to support the assessment of the agility of software processes.",
+    "secondary_use": "Can be used to evaluate or compare software development processes against Agile criteria, guiding improvements.",
+    "file_type": "owl",
+    "relevance": "Directly relevant – for projects using Agile methodologies."
   },
   {
     "file": "ontologies/P6_schema_as_cypher.txt",
     "type": "txt",
     "name": "P6_schema_as_cypher",
-    "description": ""
+    "description": "",
+    "primary_use": "Textual schema representing Oracle Primavera P6’s project database structure.",
+    "secondary_use": "Useful for importing P6 data into a graph or ontology-based system.",
+    "file_type": "txt",
+    "relevance": "Directly relevant – enables integration of schedule data with other project knowledge."
   },
   {
     "file": "ontologies/SWO software ontology.owl",
     "type": "owl",
     "name": "SWO software ontology",
-    "description": ""
+    "description": "",
+    "primary_use": "Describes software entities, types, and attributes.",
+    "secondary_use": "Can be used to catalogue software used in projects and track software versions.",
+    "file_type": "owl",
+    "relevance": "Moderately relevant – useful in projects with significant software components."
   },
   {
     "file": "ontologies/SafetyOntology.owl",
     "type": "owl",
     "name": "SafetyOntology",
-    "description": ""
+    "description": "",
+    "primary_use": "Another safety-related ontology covering hazards and safety measures.",
+    "secondary_use": "Augments or complements other safety ontologies for comprehensive coverage.",
+    "file_type": "owl",
+    "relevance": "Relevant – supports formal handling of safety and risk in projects."
   },
   {
     "file": "ontologies/bfo-2020.owl",
     "type": "owl",
     "name": "bfo-2020",
-    "description": ""
+    "description": "",
+    "primary_use": "An upper-level ontology providing generic categories (e.g. object, process, etc.) that serve as a foundation for more specific domain ontologies.",
+    "secondary_use": "Often extended or specialized by other ontologies to ensure consistency; used as a common backbone to integrate diverse domains.",
+    "file_type": "owl",
+    "relevance": "Indirectly relevant – offers a formal base to structure project knowledge and ensure interoperability across domains (conceptual consistency in project data models)."
   },
   {
     "file": "ontologies/bfo_classes_only.owl",
     "type": "owl",
     "name": "bfo_classes_only",
-    "description": ""
+    "description": "",
+    "primary_use": "An upper-level ontology providing generic categories (e.g. object, process, etc.) that serve as a foundation for more specific domain ontologies.",
+    "secondary_use": "Often extended or specialized by other ontologies to ensure consistency; used as a common backbone to integrate diverse domains.",
+    "file_type": "owl",
+    "relevance": "Indirectly relevant – offers a formal base to structure project knowledge and ensure interoperability across domains (conceptual consistency in project data models)."
   },
   {
     "file": "ontologies/building, planning, zoning, and land use regulation information in Finland.ttl",
     "type": "ttl",
-    "name": "Kokoontumistilan henkil\u00f6m\u00e4\u00e4r\u00e4",
-    "description": "V\u00e4est\u00f6tietoj\u00e4rjestelm\u00e4\u00e4n tallennettu pysyv\u00e4 rakennustunnus."
+    "name": "Kokoontumistilan henkilömäärä",
+    "description": "Väestötietojärjestelmään tallennettu pysyvä rakennustunnus.",
+    "primary_use": "Captures concepts from building, planning, zoning, and land-use regulation in Finland.",
+    "secondary_use": "Can be extended or referenced for compliance checking in construction projects, or adapted for land-use planning in other regions.",
+    "file_type": "ttl",
+    "relevance": "Tangential – relevant to projects in the construction or urban planning domain that must adhere to local building codes and zoning laws."
   },
   {
     "file": "ontologies/config.owl",
     "type": "owl",
     "name": "config",
-    "description": ""
+    "description": "",
+    "primary_use": "A configuration ontology intended to store settings or metadata for the ontology repository or agent.",
+    "secondary_use": "Could be used to configure how ontologies are processed or indexed, but not directly describing a domain.",
+    "file_type": "owl",
+    "relevance": "Minimal direct relevance – primarily for system/agent configuration rather than project domain knowledge."
   },
   {
     "file": "ontologies/cover for risk and value.ttl.txt",
     "type": "txt",
     "name": "Endurant",
-    "description": ""
+    "description": "",
+    "primary_use": "A small upper-ontology snippet focusing on the concept of Endurant (an entity that persists through time).",
+    "secondary_use": "Provides a pattern for classifying project-related entities (like risks or value objects) as endurants vs. events, ensuring alignment with foundational ontologies.",
+    "file_type": "ttl",
+    "relevance": "Theoretical relevance – helps maintain ontological consistency when incorporating risk and value concepts into a broader project ontology."
   },
   {
     "file": "ontologies/cover.ttl.txt",
     "type": "txt",
     "name": "Endurant",
-    "description": ""
+    "description": "",
+    "primary_use": "A small upper-ontology snippet focusing on the concept of Endurant (an entity that persists through time).",
+    "secondary_use": "Provides a pattern for classifying project-related entities (like risks or value objects) as endurants vs. events, ensuring alignment with foundational ontologies.",
+    "file_type": "ttl",
+    "relevance": "Theoretical relevance – helps maintain ontological consistency when incorporating risk and value concepts into a broader project ontology."
   },
   {
     "file": "ontologies/gistCore11.0.0.ttl",
     "type": "ttl",
     "name": "gistCore11.0.0",
-    "description": ""
+    "description": "",
+    "primary_use": "gist is a minimalist upper ontology created by Semantic Arts, providing general business-oriented concepts.",
+    "secondary_use": "It can be extended to various domains, ensuring that different project data models share common high-level terms.",
+    "file_type": "ttl",
+    "relevance": "Indirectly relevant – helps establish a common vocabulary for project-related data and integrate project management information with enterprise data."
   },
   {
     "file": "ontologies/gistCore9.4.0.json",
     "type": "json",
     "name": "gistCore9.4.0",
-    "description": ""
+    "description": "",
+    "primary_use": "gist is a minimalist upper ontology created by Semantic Arts, providing general business-oriented concepts.",
+    "secondary_use": "It can be extended to various domains, ensuring that different project data models share common high-level terms.",
+    "file_type": "rdf",
+    "relevance": "Indirectly relevant – helps establish a common vocabulary for project-related data and integrate project management information with enterprise data."
   },
   {
     "file": "ontologies/gistCore9.4.0.rdf",
     "type": "rdf",
     "name": "gistCore9.4.0",
-    "description": ""
+    "description": "",
+    "primary_use": "gist is a minimalist upper ontology created by Semantic Arts, providing general business-oriented concepts.",
+    "secondary_use": "It can be extended to various domains, ensuring that different project data models share common high-level terms.",
+    "file_type": "rdf",
+    "relevance": "Indirectly relevant – helps establish a common vocabulary for project-related data and integrate project management information with enterprise data."
   },
   {
     "file": "ontologies/gistCore9.4.0.ttl",
     "type": "ttl",
     "name": "gistCore",
-    "description": "Gist is a minimalist upper ontology created by Semantic Arts"
+    "description": "Gist is a minimalist upper ontology created by Semantic Arts",
+    "primary_use": "gist is a minimalist upper ontology created by Semantic Arts, providing general business-oriented concepts.",
+    "secondary_use": "It can be extended to various domains, ensuring that different project data models share common high-level terms.",
+    "file_type": "ttl",
+    "relevance": "Indirectly relevant – helps establish a common vocabulary for project-related data and integrate project management information with enterprise data."
   },
   {
     "file": "ontologies/inpho_temp.ttl",
     "type": "ttl",
     "name": "inpho_temp",
-    "description": ""
+    "description": "",
+    "primary_use": "A domain ontology for philosophical ideas and thinkers.",
+    "secondary_use": "Can be used as a reference for knowledge management in academic projects or to demonstrate ontology modeling of a complex domain.",
+    "file_type": "ttl",
+    "relevance": "Tangential – not specific to project management, but showcases ontology modeling."
   },
   {
     "file": "ontologies/itpm_CommunicationsManagement.owl",
     "type": "owl",
     "name": "itpm_CommunicationsManagement",
-    "description": ""
+    "description": "",
+    "primary_use": "Part of the IT Project Management (ITPM) ontology suite, focusing on Communications Management.",
+    "secondary_use": "Can be integrated with other PM domains to ensure communication elements are linked to project objectives.",
+    "file_type": "owl",
+    "relevance": "Directly relevant – aligns with Project Communications Management."
   },
   {
     "file": "ontologies/itpm_IT-PMV5.owl",
-    "type": "owl",
-    "name": "itpm_IT-PMV5",
-    "description": ""
-  },
-  {
+@@ -171,108 +275,180 @@
     "file": "ontologies/itpm_IssueConcepts(inwork).owl",
     "type": "owl",
     "name": "itpm_IssueConcepts(inwork)",
-    "description": ""
+    "description": "",
+    "primary_use": "An ontology for representing project issues.",
+    "secondary_use": "Supports integration of issue management with other project knowledge.",
+    "file_type": "owl",
+    "relevance": "Directly relevant – facilitates issue tracking and linking issues to outcomes."
   },
   {
     "file": "ontologies/itpm_KnowledgeBase.owl",
     "type": "owl",
     "name": "itpm_KnowledgeBase",
-    "description": ""
+    "description": "",
+    "primary_use": "An ontology to structure the overall project management knowledge base.",
+    "secondary_use": "Acts as an integrating schema for all project management knowledge areas.",
+    "file_type": "owl",
+    "relevance": "Directly relevant – provides a central model for project knowledge."
   },
   {
     "file": "ontologies/itpm_QualityMGMT.owl",
     "type": "owl",
     "name": "itpm_QualityMGMT",
-    "description": ""
+    "description": "",
+    "primary_use": "Captures concepts from Project Quality Management, such as quality requirements and metrics.",
+    "secondary_use": "Can link to scope and risk domains; useful for quality checklists and test plans.",
+    "file_type": "owl",
+    "relevance": "Directly relevant – aligns with Project Quality Management."
   },
   {
     "file": "ontologies/itpm_RuleStructure.owl",
     "type": "owl",
     "name": "itpm_RuleStructure",
-    "description": ""
+    "description": "",
+    "primary_use": "An ontology for representing business rules or project rules.",
+    "secondary_use": "Facilitates automation and reasoning by making project governance rules explicit.",
+    "file_type": "owl",
+    "relevance": "Directly relevant – allows project constraints and business rules to be captured."
   },
   {
     "file": "ontologies/itpm_ScopeManagement.owl",
     "type": "owl",
     "name": "itpm_ScopeManagement",
-    "description": ""
+    "description": "",
+    "primary_use": "Models Project Scope Management concepts, including deliverables and change control.",
+    "secondary_use": "Helps maintain alignment between scope and other aspects like time and cost.",
+    "file_type": "owl",
+    "relevance": "Directly relevant – crucial for defining and controlling project scope."
   },
   {
     "file": "ontologies/itpm_TimeManagement.owl",
     "type": "owl",
     "name": "itpm_TimeManagement",
-    "description": ""
+    "description": "",
+    "primary_use": "An ontology covering Project Time/Schedule Management.",
+    "secondary_use": "Can integrate scheduling information with other domains.",
+    "file_type": "owl",
+    "relevance": "Directly relevant – reflects Schedule Management."
   },
   {
     "file": "ontologies/kko.owl",
     "type": "owl",
     "name": "kko",
-    "description": ""
+    "description": "",
+    "primary_use": "An upper ontology providing the top-level structure for the KBpedia knowledge graph.",
+    "secondary_use": "Used to integrate and align diverse knowledge bases.",
+    "file_type": "owl",
+    "relevance": "Indirectly relevant – helps merge project data with wider enterprise knowledge."
   },
   {
     "file": "ontologies/ontouml.ttl.html",
     "type": "html",
     "name": "ontouml.ttl",
-    "description": ""
+    "description": "",
+    "primary_use": "An ontology describing the OntoUML conceptual modeling language.",
+    "secondary_use": "Helps translate conceptual models into formal representations.",
+    "file_type": "ttl",
+    "relevance": "Tangential – relevant to projects involving ontology or model design."
   },
   {
     "file": "ontologies/pmbok-event.owl",
     "type": "owl",
     "name": "pmbok-event",
-    "description": ""
+    "description": "",
+    "primary_use": "Represents events in the context of Project Management.",
+    "secondary_use": "Can tie events to schedules and roles.",
+    "file_type": "owl",
+    "relevance": "Directly relevant – covers the dynamic aspect of projects."
   },
   {
     "file": "ontologies/pmbok-ref.owl",
     "type": "owl",
     "name": "pmbok-ref",
-    "description": ""
+    "description": "",
+    "primary_use": "An ontology capturing the core reference concepts of PMBOK.",
+    "secondary_use": "Serves as a common vocabulary for project management that other ontologies can link to.",
+    "file_type": "owl",
+    "relevance": "Directly relevant – central reference model for PM concepts."
   },
   {
     "file": "ontologies/pmbok-role.owl",
     "type": "owl",
     "name": "pmbok-role",
-    "description": ""
+    "description": "",
+    "primary_use": "Defines project roles and stakeholders as per PMBOK.",
+    "secondary_use": "Used to set up organizational structures in project plans and reason about responsibility assignments.",
+    "file_type": "owl",
+    "relevance": "Directly relevant – supports stakeholder management."
   },
   {
     "file": "ontologies/pmbok4.owl",
     "type": "owl",
     "name": "pmbok4",
-    "description": ""
+    "description": "",
+    "primary_use": "A comprehensive ontology reflecting the PMBOK 4th Edition.",
+    "secondary_use": "Can serve as an overarching schema for a project management information system.",
+    "file_type": "owl",
+    "relevance": "Directly relevant – formal model of standard project management practices."
   },
   {
     "file": "ontologies/super pattern.txt.txt",
     "type": "txt",
     "name": "super pattern.txt",
-    "description": ""
+    "description": "",
+    "primary_use": "An ontology capturing a high-level pattern or template intended to be reused across ontologies.",
+    "secondary_use": "Serves as a blueprint for modeling; using it can enforce consistency.",
+    "file_type": "txt",
+    "relevance": "Indirectly relevant – improves interoperability across project ontologies."
   },
   {
     "file": "ontologies/temporal.xsd.xml",
     "type": "xml",
     "name": "temporal.xsd",
-    "description": ""
+    "description": "",
+    "primary_use": "A set of XML schemas defining temporal concepts based on ISO 19108.",
+    "secondary_use": "Used to ensure time and schedule information is represented in a standard way.",
+    "file_type": "xml",
+    "relevance": "Directly relevant – project schedules and timelines benefit from a rigorous time model."
   },
   {
     "file": "ontologies/temporal1.xsd.xml",
     "type": "xml",
     "name": "temporal1.xsd",
-    "description": ""
+    "description": "",
+    "primary_use": "A set of XML schemas defining temporal concepts based on ISO 19108.",
+    "secondary_use": "Used to ensure time and schedule information is represented in a standard way.",
+    "file_type": "xml",
+    "relevance": "Directly relevant – project schedules and timelines benefit from a rigorous time model."
   },
   {
     "file": "ontologies/temporalReferenceSystems.xsd.xml",
     "type": "xml",
     "name": "temporalReferenceSystems.xsd",
-    "description": ""
+    "description": "",
+    "primary_use": "A set of XML schemas defining temporal concepts based on ISO 19108.",
+    "secondary_use": "Used to ensure time and schedule information is represented in a standard way.",
+    "file_type": "xml",
+    "relevance": "Directly relevant – project schedules and timelines benefit from a rigorous time model."
   },
   {
     "file": "ontologies/temporalTopology.xsd.xml",
     "type": "xml",
     "name": "temporalTopology.xsd",
-    "description": ""
+    "description": "",
+    "primary_use": "A set of XML schemas defining temporal concepts based on ISO 19108.",
+    "secondary_use": "Used to ensure time and schedule information is represented in a standard way.",
+    "file_type": "xml",
+    "relevance": "Directly relevant – project schedules and timelines benefit from a rigorous time model."
   },
   {
     "file": "ontologies/uniclass1-4.rdf",
     "type": "rdf",
     "name": "uniclass1-4",
-    "description": ""
+    "description": "",
+    "primary_use": "An ontology based on the Uniclass classification system for construction industry objects and activities.",
+    "secondary_use": "Allows integration of construction project data by tagging them with standard Uniclass categories.",
+    "file_type": "rdf",
+    "relevance": "Relevant – for construction and engineering projects, provides a common language for project participants."
   }
 ]
