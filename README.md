@@ -1,5 +1,6 @@
 # Ontologies for projects
-3rd party ontologies useful for projects
+3rd party ontologies useful for projects. All ontology files are stored in the
+`ontologies` directory.
 
 ## Website Generation
 

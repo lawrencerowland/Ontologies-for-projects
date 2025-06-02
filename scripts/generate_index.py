@@ -33,12 +33,15 @@ def extract_metadata(path):
 
     return metadata
 
+ONT_DIR = 'ontologies'
+
 def main():
     index = []
-    for fname in sorted(os.listdir('.')):
+    for fname in sorted(os.listdir(ONT_DIR)):
         ext = os.path.splitext(fname)[1].lower()
         if ext in EXTENSIONS:
-            index.append(extract_metadata(fname))
+            path = os.path.join(ONT_DIR, fname)
+            index.append(extract_metadata(path))
     os.makedirs('docs', exist_ok=True)
     with open('docs/ontologies.json', 'w') as f:
         json.dump(index, f, indent=2)

@@ -1,462 +1,278 @@
 [
   {
-    "file": "2020BFOeasier.ttl",
+    "file": "ontologies/2020BFOeasier.ttl",
     "type": "ttl",
     "name": "BFO 2020",
-    "description": "",
-    "file_type": "ttl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "2020_02_philosophy_inpho.owl",
+    "file": "ontologies/2020_02_philosophy_inpho.owl",
     "type": "owl",
     "name": "2020_02_philosophy_inpho",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "2020_11_Philosphy inpho.owl",
+    "file": "ontologies/2020_11_Philosphy inpho.owl",
     "type": "owl",
     "name": "2020_11_Philosphy inpho",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "2022 11 safety ontology.ttl",
+    "file": "ontologies/2022 11 safety ontology.ttl",
     "type": "ttl",
     "name": "2022 11 safety ontology",
-    "description": "",
-    "file_type": "ttl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "2022 useful ontologies from protege.txt",
+    "file": "ontologies/2022 useful ontologies from protege.txt",
     "type": "txt",
     "name": "2022 useful ontologies from protege",
-    "description": "",
-    "file_type": "txt",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "BFO2020.rdf",
+    "file": "ontologies/BFO2020.rdf",
     "type": "rdf",
     "name": "BFO2020",
-    "description": "",
-    "file_type": "rdf",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "BFO2020_betterlabels.owl",
+    "file": "ontologies/BFO2020_betterlabels.owl",
     "type": "owl",
     "name": "BFO 2020",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "Decisions.owl.txt",
+    "file": "ontologies/Decisions.owl.txt",
     "type": "txt",
     "name": "Decisions.owl",
-    "description": "",
-    "file_type": "txt",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "From_archimate_insurance.owl",
+    "file": "ontologies/From_archimate_insurance.owl",
     "type": "owl",
     "name": "From_archimate_insurance",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "Innovation0_gi2mo.owl",
+    "file": "ontologies/Innovation0_gi2mo.owl",
     "type": "owl",
     "name": "Innovation0_gi2mo",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "medium"
+    "description": ""
   },
   {
-    "file": "IoTFrameworks.ttl.html",
+    "file": "ontologies/IoTFrameworks.ttl.html",
     "type": "html",
     "name": "IoTFrameworks.ttl",
-    "description": "",
-    "file_type": "html",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "OntoAgile.owl.html",
+    "file": "ontologies/OntoAgile.owl.html",
     "type": "html",
     "name": "OntoAgile.owl",
-    "description": "",
-    "file_type": "html",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "P6_schema_as_cypher.txt",
+    "file": "ontologies/P6_schema_as_cypher.txt",
     "type": "txt",
     "name": "P6_schema_as_cypher",
-    "description": "",
-    "file_type": "txt",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "SWO software ontology.owl",
+    "file": "ontologies/SWO software ontology.owl",
     "type": "owl",
     "name": "SWO software ontology",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "SafetyOntology.owl",
+    "file": "ontologies/SafetyOntology.owl",
     "type": "owl",
     "name": "SafetyOntology",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "bfo-2020.owl",
+    "file": "ontologies/bfo-2020.owl",
     "type": "owl",
     "name": "bfo-2020",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "bfo_classes_only.owl",
+    "file": "ontologies/bfo_classes_only.owl",
     "type": "owl",
     "name": "bfo_classes_only",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "building, planning, zoning, and land use regulation information in Finland.ttl",
+    "file": "ontologies/building, planning, zoning, and land use regulation information in Finland.ttl",
     "type": "ttl",
     "name": "Kokoontumistilan henkil\u00f6m\u00e4\u00e4r\u00e4",
-    "description": "V\u00e4est\u00f6tietoj\u00e4rjestelm\u00e4\u00e4n tallennettu pysyv\u00e4 rakennustunnus.",
-    "file_type": "ttl",
-    "primary_use": "V\u00e4est\u00f6tietoj\u00e4rjestelm\u00e4\u00e4n tallennettu pysyv\u00e4 rakennustunnus",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": "V\u00e4est\u00f6tietoj\u00e4rjestelm\u00e4\u00e4n tallennettu pysyv\u00e4 rakennustunnus."
   },
   {
-    "file": "config.owl",
+    "file": "ontologies/config.owl",
     "type": "owl",
     "name": "config",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "cover for risk and value.ttl.txt",
+    "file": "ontologies/cover for risk and value.ttl.txt",
     "type": "txt",
     "name": "Endurant",
-    "description": "",
-    "file_type": "txt",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "cover.ttl.txt",
+    "file": "ontologies/cover.ttl.txt",
     "type": "txt",
     "name": "Endurant",
-    "description": "",
-    "file_type": "txt",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "gistCore11.0.0.ttl",
+    "file": "ontologies/gistCore11.0.0.ttl",
     "type": "ttl",
     "name": "gistCore11.0.0",
-    "description": "",
-    "file_type": "ttl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "gistCore9.4.0.json",
+    "file": "ontologies/gistCore9.4.0.json",
     "type": "json",
     "name": "gistCore9.4.0",
-    "description": "",
-    "file_type": "json",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "gistCore9.4.0.rdf",
+    "file": "ontologies/gistCore9.4.0.rdf",
     "type": "rdf",
     "name": "gistCore9.4.0",
-    "description": "",
-    "file_type": "rdf",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "gistCore9.4.0.ttl",
+    "file": "ontologies/gistCore9.4.0.ttl",
     "type": "ttl",
     "name": "gistCore",
-    "description": "Gist is a minimalist upper ontology created by Semantic Arts",
-    "file_type": "ttl",
-    "primary_use": "Gist is a minimalist upper ontology created by Semantic Arts",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": "Gist is a minimalist upper ontology created by Semantic Arts"
   },
   {
-    "file": "inpho_temp.ttl",
+    "file": "ontologies/inpho_temp.ttl",
     "type": "ttl",
     "name": "inpho_temp",
-    "description": "",
-    "file_type": "ttl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "itpm_CommunicationsManagement.owl",
+    "file": "ontologies/itpm_CommunicationsManagement.owl",
     "type": "owl",
     "name": "itpm_CommunicationsManagement",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "itpm_IT-PMV5.owl",
+    "file": "ontologies/itpm_IT-PMV5.owl",
     "type": "owl",
     "name": "itpm_IT-PMV5",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "itpm_IssueConcepts(inwork).owl",
+    "file": "ontologies/itpm_IssueConcepts(inwork).owl",
     "type": "owl",
     "name": "itpm_IssueConcepts(inwork)",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "itpm_KnowledgeBase.owl",
+    "file": "ontologies/itpm_KnowledgeBase.owl",
     "type": "owl",
     "name": "itpm_KnowledgeBase",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "itpm_QualityMGMT.owl",
+    "file": "ontologies/itpm_QualityMGMT.owl",
     "type": "owl",
     "name": "itpm_QualityMGMT",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "itpm_RuleStructure.owl",
+    "file": "ontologies/itpm_RuleStructure.owl",
     "type": "owl",
     "name": "itpm_RuleStructure",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "itpm_ScopeManagement.owl",
+    "file": "ontologies/itpm_ScopeManagement.owl",
     "type": "owl",
     "name": "itpm_ScopeManagement",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "itpm_TimeManagement.owl",
+    "file": "ontologies/itpm_TimeManagement.owl",
     "type": "owl",
     "name": "itpm_TimeManagement",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "kko.owl",
+    "file": "ontologies/kko.owl",
     "type": "owl",
     "name": "kko",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "ontouml.ttl.html",
+    "file": "ontologies/ontouml.ttl.html",
     "type": "html",
     "name": "ontouml.ttl",
-    "description": "",
-    "file_type": "html",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "pmbok-event.owl",
+    "file": "ontologies/pmbok-event.owl",
     "type": "owl",
     "name": "pmbok-event",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "pmbok-ref.owl",
+    "file": "ontologies/pmbok-ref.owl",
     "type": "owl",
     "name": "pmbok-ref",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "medium"
+    "description": ""
   },
   {
-    "file": "pmbok-role.owl",
+    "file": "ontologies/pmbok-role.owl",
     "type": "owl",
     "name": "pmbok-role",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "medium"
+    "description": ""
   },
   {
-    "file": "pmbok4.owl",
+    "file": "ontologies/pmbok4.owl",
     "type": "owl",
     "name": "pmbok4",
-    "description": "",
-    "file_type": "owl",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "medium"
+    "description": ""
   },
   {
-    "file": "super pattern.txt.txt",
+    "file": "ontologies/super pattern.txt.txt",
     "type": "txt",
     "name": "super pattern.txt",
-    "description": "",
-    "file_type": "txt",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "temporal.xsd.xml",
+    "file": "ontologies/temporal.xsd.xml",
     "type": "xml",
     "name": "temporal.xsd",
-    "description": "",
-    "file_type": "xml",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "temporal1.xsd.xml",
+    "file": "ontologies/temporal1.xsd.xml",
     "type": "xml",
     "name": "temporal1.xsd",
-    "description": "",
-    "file_type": "xml",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "temporalReferenceSystems.xsd.xml",
+    "file": "ontologies/temporalReferenceSystems.xsd.xml",
     "type": "xml",
     "name": "temporalReferenceSystems.xsd",
-    "description": "",
-    "file_type": "xml",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "temporalTopology.xsd.xml",
+    "file": "ontologies/temporalTopology.xsd.xml",
     "type": "xml",
     "name": "temporalTopology.xsd",
-    "description": "",
-    "file_type": "xml",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   },
   {
-    "file": "uniclass1-4.rdf",
+    "file": "ontologies/uniclass1-4.rdf",
     "type": "rdf",
     "name": "uniclass1-4",
-    "description": "",
-    "file_type": "rdf",
-    "primary_use": "",
-    "secondary_use": "",
-    "relevance": "low"
+    "description": ""
   }
 ]
