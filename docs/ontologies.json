@@ -3,276 +3,460 @@
     "file": "2020BFOeasier.ttl",
     "type": "ttl",
     "name": "BFO 2020",
-    "description": ""
+    "description": "",
+    "file_type": "ttl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "2020_02_philosophy_inpho.owl",
     "type": "owl",
     "name": "2020_02_philosophy_inpho",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "2020_11_Philosphy inpho.owl",
     "type": "owl",
     "name": "2020_11_Philosphy inpho",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "2022 11 safety ontology.ttl",
     "type": "ttl",
     "name": "2022 11 safety ontology",
-    "description": ""
+    "description": "",
+    "file_type": "ttl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "2022 useful ontologies from protege.txt",
     "type": "txt",
     "name": "2022 useful ontologies from protege",
-    "description": ""
+    "description": "",
+    "file_type": "txt",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "BFO2020.rdf",
     "type": "rdf",
     "name": "BFO2020",
-    "description": ""
+    "description": "",
+    "file_type": "rdf",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "BFO2020_betterlabels.owl",
     "type": "owl",
     "name": "BFO 2020",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "Decisions.owl.txt",
     "type": "txt",
     "name": "Decisions.owl",
-    "description": ""
+    "description": "",
+    "file_type": "txt",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "From_archimate_insurance.owl",
     "type": "owl",
     "name": "From_archimate_insurance",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "Innovation0_gi2mo.owl",
     "type": "owl",
     "name": "Innovation0_gi2mo",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "medium"
   },
   {
     "file": "IoTFrameworks.ttl.html",
     "type": "html",
     "name": "IoTFrameworks.ttl",
-    "description": ""
+    "description": "",
+    "file_type": "html",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "OntoAgile.owl.html",
     "type": "html",
     "name": "OntoAgile.owl",
-    "description": ""
+    "description": "",
+    "file_type": "html",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "P6_schema_as_cypher.txt",
     "type": "txt",
     "name": "P6_schema_as_cypher",
-    "description": ""
+    "description": "",
+    "file_type": "txt",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "SWO software ontology.owl",
     "type": "owl",
     "name": "SWO software ontology",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "SafetyOntology.owl",
     "type": "owl",
     "name": "SafetyOntology",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "bfo-2020.owl",
     "type": "owl",
     "name": "bfo-2020",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "bfo_classes_only.owl",
     "type": "owl",
     "name": "bfo_classes_only",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "building, planning, zoning, and land use regulation information in Finland.ttl",
     "type": "ttl",
     "name": "Kokoontumistilan henkil\u00f6m\u00e4\u00e4r\u00e4",
-    "description": "V\u00e4est\u00f6tietoj\u00e4rjestelm\u00e4\u00e4n tallennettu pysyv\u00e4 rakennustunnus."
+    "description": "V\u00e4est\u00f6tietoj\u00e4rjestelm\u00e4\u00e4n tallennettu pysyv\u00e4 rakennustunnus.",
+    "file_type": "ttl",
+    "primary_use": "V\u00e4est\u00f6tietoj\u00e4rjestelm\u00e4\u00e4n tallennettu pysyv\u00e4 rakennustunnus",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "config.owl",
     "type": "owl",
     "name": "config",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "cover for risk and value.ttl.txt",
     "type": "txt",
     "name": "Endurant",
-    "description": ""
+    "description": "",
+    "file_type": "txt",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "cover.ttl.txt",
     "type": "txt",
     "name": "Endurant",
-    "description": ""
+    "description": "",
+    "file_type": "txt",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "gistCore11.0.0.ttl",
     "type": "ttl",
     "name": "gistCore11.0.0",
-    "description": ""
+    "description": "",
+    "file_type": "ttl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "gistCore9.4.0.json",
     "type": "json",
     "name": "gistCore9.4.0",
-    "description": ""
+    "description": "",
+    "file_type": "json",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "gistCore9.4.0.rdf",
     "type": "rdf",
     "name": "gistCore9.4.0",
-    "description": ""
+    "description": "",
+    "file_type": "rdf",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "gistCore9.4.0.ttl",
     "type": "ttl",
     "name": "gistCore",
-    "description": "Gist is a minimalist upper ontology created by Semantic Arts"
+    "description": "Gist is a minimalist upper ontology created by Semantic Arts",
+    "file_type": "ttl",
+    "primary_use": "Gist is a minimalist upper ontology created by Semantic Arts",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "inpho_temp.ttl",
     "type": "ttl",
     "name": "inpho_temp",
-    "description": ""
+    "description": "",
+    "file_type": "ttl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "itpm_CommunicationsManagement.owl",
     "type": "owl",
     "name": "itpm_CommunicationsManagement",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "itpm_IT-PMV5.owl",
     "type": "owl",
     "name": "itpm_IT-PMV5",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "itpm_IssueConcepts(inwork).owl",
     "type": "owl",
     "name": "itpm_IssueConcepts(inwork)",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "itpm_KnowledgeBase.owl",
     "type": "owl",
     "name": "itpm_KnowledgeBase",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "itpm_QualityMGMT.owl",
     "type": "owl",
     "name": "itpm_QualityMGMT",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "itpm_RuleStructure.owl",
     "type": "owl",
     "name": "itpm_RuleStructure",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "itpm_ScopeManagement.owl",
     "type": "owl",
     "name": "itpm_ScopeManagement",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "itpm_TimeManagement.owl",
     "type": "owl",
     "name": "itpm_TimeManagement",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "kko.owl",
     "type": "owl",
     "name": "kko",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "ontouml.ttl.html",
     "type": "html",
     "name": "ontouml.ttl",
-    "description": ""
+    "description": "",
+    "file_type": "html",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "pmbok-event.owl",
     "type": "owl",
     "name": "pmbok-event",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "pmbok-ref.owl",
     "type": "owl",
     "name": "pmbok-ref",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "medium"
   },
   {
     "file": "pmbok-role.owl",
     "type": "owl",
     "name": "pmbok-role",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "medium"
   },
   {
     "file": "pmbok4.owl",
     "type": "owl",
     "name": "pmbok4",
-    "description": ""
+    "description": "",
+    "file_type": "owl",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "medium"
   },
   {
     "file": "super pattern.txt.txt",
     "type": "txt",
     "name": "super pattern.txt",
-    "description": ""
+    "description": "",
+    "file_type": "txt",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "temporal.xsd.xml",
     "type": "xml",
     "name": "temporal.xsd",
-    "description": ""
+    "description": "",
+    "file_type": "xml",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "temporal1.xsd.xml",
     "type": "xml",
     "name": "temporal1.xsd",
-    "description": ""
+    "description": "",
+    "file_type": "xml",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "temporalReferenceSystems.xsd.xml",
     "type": "xml",
     "name": "temporalReferenceSystems.xsd",
-    "description": ""
+    "description": "",
+    "file_type": "xml",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "temporalTopology.xsd.xml",
     "type": "xml",
     "name": "temporalTopology.xsd",
-    "description": ""
+    "description": "",
+    "file_type": "xml",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   },
   {
     "file": "uniclass1-4.rdf",
     "type": "rdf",
     "name": "uniclass1-4",
-    "description": ""
+    "description": "",
+    "file_type": "rdf",
+    "primary_use": "",
+    "secondary_use": "",
+    "relevance": "low"
   }
 ]

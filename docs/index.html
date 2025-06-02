@@ -20,7 +20,13 @@ function render() {
     if (!filter || o.name.toLowerCase().includes(filter) || o.type.includes(filter)) {
       const div = document.createElement('div');
       div.className = 'card';
-      div.innerHTML = `<h3>${o.name}</h3><p>${o.description}</p><p><a href="../${o.file}">${o.file}</a> (${o.type})</p>`;
+      div.innerHTML = `
+        <h3>${o.name}</h3>
+        <p>${o.description}</p>
+        <p><strong>Primary Use:</strong> ${o.primary_use || ''}</p>
+        <p><strong>Secondary Use:</strong> ${o.secondary_use || ''}</p>
+        <p><a href="../${o.file}">${o.file}</a> (${o.file_type || o.type})</p>
+        <p><strong>Relevance:</strong> ${o.relevance || ''}</p>`;
       container.appendChild(div);
     }
   });
