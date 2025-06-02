@@ -1,0 +1,6 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Placeholder taxonomy that can be expanded as ontologies are added.
+
+<http://example.org/taxonomy> a skos:ConceptScheme ;
+    skos:prefLabel "Ontology Topics" .
