@@ -90,12 +90,6 @@
     "description": ""
   },
   {
-    "file": "agents.md.txt",
-    "type": "txt",
-    "name": "agents.md",
-    "description": ""
-  },
-  {
     "file": "bfo-2020.owl",
     "type": "owl",
     "name": "bfo-2020",
