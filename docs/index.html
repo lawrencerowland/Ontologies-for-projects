@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ontologies Index</title>
+<meta name="description" content="Index of ontologies for projects">
+<meta name="keywords" content="ontology, project">
+<script>
+async function load() {
+  const resp = await fetch('ontologies.json');
+  const data = await resp.json();
+  window.ontologies = data;
+  render();
+}
+function render() {
+  const filter = document.getElementById('filter').value.toLowerCase();
+  const container = document.getElementById('cards');
+  container.innerHTML = '';
+  ontologies.forEach(o => {
+    if (!filter || o.name.toLowerCase().includes(filter) || o.type.includes(filter)) {
+      const div = document.createElement('div');
+      div.className = 'card';
+      div.innerHTML = `<h3>${o.name}</h3><p>${o.description}</p><p><a href="../${o.file}">${o.file}</a> (${o.type})</p>`;
+      container.appendChild(div);
+    }
+  });
+}
+document.addEventListener('DOMContentLoaded', load);
+</script>
+<style>
+body { font-family: Arial, sans-serif; }
+.card { border: 1px solid #ccc; padding: 1em; margin: 0.5em 0; }
+</style>
+</head>
+<body>
+<h1>Ontologies</h1>
+<input id="filter" placeholder="Filter" oninput="render()">
+<div id="cards"></div>
+</body>
+</html>
