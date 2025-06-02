@@ -40,8 +40,6 @@
     "relevance": "Relevant – provides structured vocabulary for safety in projects."
   },
   {
-    "file": "ontologies/2022 useful ontologies from protege.txt",
-@@ -33,133 +49,221 @@
     "file": "ontologies/BFO2020.rdf",
     "type": "rdf",
     "name": "BFO2020",
@@ -262,8 +260,6 @@
     "relevance": "Directly relevant – aligns with Project Communications Management."
   },
   {
-    "file": "ontologies/itpm_IT-PMV5.owl",
-@@ -171,108 +275,180 @@
     "file": "ontologies/itpm_IssueConcepts(inwork).owl",
     "type": "owl",
     "name": "itpm_IssueConcepts(inwork)",
