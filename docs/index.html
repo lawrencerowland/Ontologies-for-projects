@@ -5,19 +5,47 @@
 <title>Ontologies Index</title>
 <meta name="description" content="Index of ontologies for projects">
 <meta name="keywords" content="ontology, project">
+<!-- Google tag (gtag.js) placeholder -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXX');
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Dataset",
+  "name": "Ontologies Index",
+  "description": "Index of ontologies for projects",
+  "url": "https://example.org"
+}
+</script>
 <script>
 async function load() {
   const resp = await fetch('ontologies.json');
   const data = await resp.json();
   window.ontologies = data;
+  populateTypes();
   render();
 }
+
+function populateTypes() {
+  const select = document.getElementById('typeFilter');
+  const types = Array.from(new Set(ontologies.map(o => (o.file_type || o.type)))).sort();
+  select.innerHTML = '<option value="">All Types</option>' +
+    types.map(t => `<option value="${t}">${t}</option>`).join('');
+}
+
 function render() {
   const filter = document.getElementById('filter').value.toLowerCase();
+  const type = document.getElementById('typeFilter').value.toLowerCase();
   const container = document.getElementById('cards');
   container.innerHTML = '';
   ontologies.forEach(o => {
-    if (!filter || o.name.toLowerCase().includes(filter) || o.type.includes(filter)) {
+    const oType = (o.file_type || o.type).toLowerCase();
+    if ((!filter || o.name.toLowerCase().includes(filter)) && (!type || oType === type)) {
       const div = document.createElement('div');
       div.className = 'card';
       div.innerHTML = `
@@ -41,6 +69,7 @@ body { font-family: Arial, sans-serif; }
 <body>
 <h1>Ontologies</h1>
 <input id="filter" placeholder="Filter" oninput="render()">
+<select id="typeFilter" onchange="render()"></select>
 <div id="cards"></div>
 </body>
 </html>

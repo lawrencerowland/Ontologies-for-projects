@@ -15,3 +15,9 @@ ontology files and fill in any missing metadata in `docs/ontologies.json` such
 as primary and secondary use or relevance for project management. It runs
 `scripts/advanced_review.py` and commits the updated index back to the
 repository.
+
+## Taxonomy Generation
+
+Run `scripts/generate_taxonomy.py` after the index is updated to rebuild
+`docs/taxonomy.ttl` with SKOS concepts for each ontology file type. This keeps
+the taxonomy in sync with the available ontologies.
