@@ -438,5 +438,45 @@
     "secondary_use": "Allows integration of construction project data by tagging them with standard Uniclass categories.",
     "file_type": "rdf",
     "relevance": "Relevant – for construction and engineering projects, provides a common language for project participants."
+  },
+  {
+    "file": "ontologies/2022 useful ontologies from protege.txt",
+    "type": "txt",
+    "name": "2022 useful ontologies from protege",
+    "description": "",
+    "primary_use": "A collection of prefix declarations exported from Protégé, referencing many external ontologies.",
+    "secondary_use": "Serves as a catalog/mapping file when integrating those ontologies in RDF/OWL projects.",
+    "file_type": "ttl",
+    "relevance": "Tangential – mainly a supporting reference for other ontologies."
+  },
+  {
+    "file": "ontologies/i40kg.ttl.html",
+    "type": "html",
+    "name": "i40kg.ttl",
+    "description": "",
+    "primary_use": "Ontology for the Industry 4.0 standards knowledge graph (I40KG).",
+    "secondary_use": "Helps align industrial IoT vocabularies and integrate manufacturing standards.",
+    "file_type": "ttl",
+    "relevance": "Tangential – useful for Industry 4.0 and IoT-related projects."
+  },
+  {
+    "file": "ontologies/itpm_IT-PMV5.owl",
+    "type": "owl",
+    "name": "itpm_IT-PMV5",
+    "description": "",
+    "primary_use": "Core ontology from the IT Project Management (ITPM) suite describing projects, phases and work packages.",
+    "secondary_use": "Allows project planning and issue tracking to be integrated with other PM domains.",
+    "file_type": "owl",
+    "relevance": "Directly relevant – models fundamental project management concepts."
+  },
+  {
+    "file": "ontologies/sto.ttl.html",
+    "type": "html",
+    "name": "sto.ttl",
+    "description": "",
+    "primary_use": "Ontology defining standard terminology for Industry 4.0 within the I40KG project.",
+    "secondary_use": "Supports comparison and cross-reference of standards across Industry 4.0 frameworks.",
+    "file_type": "ttl",
+    "relevance": "Tangential – mainly pertinent to manufacturing and automation contexts."
   }
 ]
