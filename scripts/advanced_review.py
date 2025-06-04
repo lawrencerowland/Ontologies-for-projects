@@ -5,6 +5,17 @@ import json
 import os
 import re
 
+# keywords to infer domain/task tags
+TAG_KEYWORDS = {
+    'Construction': ['construction', 'building', 'architecture', 'zoning', 'land use'],
+    'IT': ['software', 'information technology', 'computer', 'network', 'it project'],
+    'Safety': ['safety', 'hazard'],
+    'Risk Management': ['risk'],
+    'Schedule': ['schedule', 'gantt', 'milestone', 'timeline'],
+    'Quality Assurance': ['quality', 'testing', 'validation', 'verification'],
+    'Work Breakdown Structure': ['work breakdown structure', 'wbs']
+}
+
 INDEX_PATH = os.path.join('docs', 'ontologies.json')
 
 # heuristics for extracting metadata
@@ -40,6 +51,16 @@ def infer_use(description):
     secondary = '.'.join(p.strip() for p in parts[1:] if p.strip())
     return primary, secondary
 
+def detect_tags(text):
+    tags = []
+    ltext = text.lower()
+    for tag, kws in TAG_KEYWORDS.items():
+        for kw in kws:
+            if re.search(re.escape(kw), ltext):
+                tags.append(tag)
+                break
+    return sorted(set(tags))
+
 def process_file(path, metadata):
     try:
         with open(path, 'r', errors='ignore') as f:
@@ -61,6 +82,10 @@ def process_file(path, metadata):
         metadata['secondary_use'] = secondary
     if not metadata.get('relevance'):
         metadata['relevance'] = infer_relevance(content)
+
+    if not metadata.get('tags'):
+        meta_text = ' '.join([metadata.get('name', ''), metadata.get('description', ''), content])
+        metadata['tags'] = detect_tags(meta_text)
 
     return metadata
 
