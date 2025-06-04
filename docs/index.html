@@ -28,6 +28,7 @@ async function load() {
   const data = await resp.json();
   window.ontologies = data;
   populateTypes();
+  populateAreas();
   render();
 }
 
@@ -38,14 +39,23 @@ function populateTypes() {
     types.map(t => `<option value="${t}">${t}</option>`).join('');
 }
 
+function populateAreas() {
+  const select = document.getElementById('areaFilter');
+  const areas = Array.from(new Set(ontologies.flatMap(o => o.tags || []))).sort();
+  select.innerHTML = '<option value="">All Domains/Areas</option>' +
+    areas.map(a => `<option value="${a.toLowerCase()}">${a}</option>`).join('');
+}
+
 function render() {
   const filter = document.getElementById('filter').value.toLowerCase();
   const type = document.getElementById('typeFilter').value.toLowerCase();
+  const area = document.getElementById('areaFilter').value.toLowerCase();
   const container = document.getElementById('cards');
   container.innerHTML = '';
   ontologies.forEach(o => {
     const oType = (o.file_type || o.type).toLowerCase();
-    if ((!filter || o.name.toLowerCase().includes(filter)) && (!type || oType === type)) {
+    const tags = (o.tags || []).map(t => t.toLowerCase());
+    if ((!filter || o.name.toLowerCase().includes(filter)) && (!type || oType === type) && (!area || tags.includes(area))) {
       const div = document.createElement('div');
       div.className = 'card';
       div.innerHTML = `
@@ -54,7 +64,8 @@ function render() {
         <p><strong>Primary Use:</strong> ${o.primary_use || ''}</p>
         <p><strong>Secondary Use:</strong> ${o.secondary_use || ''}</p>
         <p><a href="../${o.file}">${o.file}</a> (${o.file_type || o.type})</p>
-        <p><strong>Relevance:</strong> ${o.relevance || ''}</p>`;
+        <p><strong>Relevance:</strong> ${o.relevance || ''}</p>
+        <p><strong>Tags:</strong> ${(o.tags || []).join(', ')}</p>`;
       container.appendChild(div);
     }
   });
@@ -70,6 +81,7 @@ body { font-family: Arial, sans-serif; }
 <h1>Ontologies</h1>
 <input id="filter" placeholder="Filter" oninput="render()">
 <select id="typeFilter" onchange="render()"></select>
+<select id="areaFilter" onchange="render()"></select>
 <div id="cards"></div>
 </body>
 </html>

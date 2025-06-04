@@ -3,6 +3,14 @@
 <http://example.org/taxonomy#OntologyTypes> a skos:ConceptScheme ;
     skos:prefLabel "Ontology File Types" .
 
+<http://example.org/taxonomy#html> a skos:Concept ;
+    skos:prefLabel "html" ;
+    skos:inScheme <http://example.org/taxonomy#OntologyTypes> .
+
+<http://example.org/taxonomy#json> a skos:Concept ;
+    skos:prefLabel "json" ;
+    skos:inScheme <http://example.org/taxonomy#OntologyTypes> .
+
 <http://example.org/taxonomy#owl> a skos:Concept ;
     skos:prefLabel "owl" ;
     skos:inScheme <http://example.org/taxonomy#OntologyTypes> .

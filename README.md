@@ -16,6 +16,11 @@ as primary and secondary use or relevance for project management. It runs
 `scripts/advanced_review.py` and commits the updated index back to the
 repository.
 
+`advanced_review.py` also assigns basic domain and task tags (e.g. Construction,
+Safety, Risk Management) based on keywords found in each ontology. These tags
+appear in `docs/ontologies.json` and let the web page filter ontologies by
+domain.
+
 ## Taxonomy Generation
 
 Run `scripts/generate_taxonomy.py` after the index is updated to rebuild
