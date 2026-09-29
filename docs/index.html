@@ -1,87 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Ontologies Index</title>
-<meta name="description" content="Index of ontologies for projects">
-<meta name="keywords" content="ontology, project">
-<!-- Google tag (gtag.js) placeholder -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXX');
-</script>
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Dataset",
-  "name": "Ontologies Index",
-  "description": "Index of ontologies for projects",
-  "url": "https://example.org"
-}
-</script>
-<script>
-async function load() {
-  const resp = await fetch('ontologies.json');
-  const data = await resp.json();
-  window.ontologies = data;
-  populateTypes();
-  populateAreas();
-  render();
-}
-
-function populateTypes() {
-  const select = document.getElementById('typeFilter');
-  const types = Array.from(new Set(ontologies.map(o => (o.file_type || o.type)))).sort();
-  select.innerHTML = '<option value="">All Types</option>' +
-    types.map(t => `<option value="${t}">${t}</option>`).join('');
-}
-
-function populateAreas() {
-  const select = document.getElementById('areaFilter');
-  const areas = Array.from(new Set(ontologies.flatMap(o => o.tags || []))).sort();
-  select.innerHTML = '<option value="">All Domains/Areas</option>' +
-    areas.map(a => `<option value="${a.toLowerCase()}">${a}</option>`).join('');
-}
-
-function render() {
-  const filter = document.getElementById('filter').value.toLowerCase();
-  const type = document.getElementById('typeFilter').value.toLowerCase();
-  const area = document.getElementById('areaFilter').value.toLowerCase();
-  const container = document.getElementById('cards');
-  container.innerHTML = '';
-  ontologies.forEach(o => {
-    const oType = (o.file_type || o.type).toLowerCase();
-    const tags = (o.tags || []).map(t => t.toLowerCase());
-    if ((!filter || o.name.toLowerCase().includes(filter)) && (!type || oType === type) && (!area || tags.includes(area))) {
-      const div = document.createElement('div');
-      div.className = 'card';
-      div.innerHTML = `
-        <h3>${o.name}</h3>
-        <p>${o.description}</p>
-        <p><strong>Primary Use:</strong> ${o.primary_use || ''}</p>
-        <p><strong>Secondary Use:</strong> ${o.secondary_use || ''}</p>
-        <p><a href="../${o.file}">${o.file}</a> (${o.file_type || o.type})</p>
-        <p><strong>Relevance:</strong> ${o.relevance || ''}</p>
-        <p><strong>Tags:</strong> ${(o.tags || []).join(', ')}</p>`;
-      container.appendChild(div);
-    }
-  });
-}
-document.addEventListener('DOMContentLoaded', load);
-</script>
-<style>
-body { font-family: Arial, sans-serif; }
-.card { border: 1px solid #ccc; padding: 1em; margin: 0.5em 0; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ontologies for projects · Lawrence Rowland</title>
+  <meta name="description" content="A working collection of candidate ontologies, reference files and modelling fragments for projects. Browse the notes and open the original stored files.">
+  <link rel="icon" href="catalogue-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="catalogue.css">
+  <!-- Add a real Google measurement ID here if analytics is configured. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Ontologies for projects",
+    "description": "A working collection of candidate ontologies, reference files and modelling fragments for projects.",
+    "url": "https://lawrencerowland.github.io/Ontologies-for-projects/",
+    "isPartOf": {"@type": "WebSite", "name": "Lawrence Rowland — independent project experiments", "url": "https://lawrencerowland.github.io/"}
+  }
+  </script>
+  <script defer src="catalogue.js"></script>
 </head>
 <body>
-<h1>Ontologies</h1>
-<input id="filter" placeholder="Filter" oninput="render()">
-<select id="typeFilter" onchange="render()"></select>
-<select id="areaFilter" onchange="render()"></select>
-<div id="cards"></div>
+  <a class="skip" href="#catalogue">Skip to the catalogue</a>
+  <header class="site-header">
+    <a class="brand" href="https://lawrencerowland.github.io/">Lawrence Rowland</a>
+    <nav aria-label="Main navigation"><a href="https://lawrencerowland.github.io/side-projects.html">Projects</a><a href="https://lawrencerowland.github.io/library.html">Library</a></nav>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="title">
+      <div>
+        <p class="eyebrow">From the library · vocabularies &amp; models</p>
+        <h1 id="title">Ontologies<br>for projects</h1>
+        <p class="lead">What do we mean by a task, a resource or a decision—and how do those things relate?</p>
+        <p>This is a working shelf of candidate vocabularies, reference files and modelling fragments. Use it to find terms worth borrowing, compare different ways of describing a project, and inspect the files behind the notes.</p>
+      </div>
+      <figure class="vocabulary-picture">
+        <svg viewBox="0 0 430 310" role="img" aria-labelledby="picture-title picture-desc">
+          <title id="picture-title">A small vocabulary connects project terms</title>
+          <desc id="picture-desc">An illustrative role is responsible for a task, and that task produces a deliverable. This is a reading aid, not a model extracted from the collection.</desc>
+          <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#086d70"/></marker></defs>
+          <path d="M25 270H405M25 240H405M25 210H405M25 180H405M25 150H405M25 120H405M25 90H405M25 60H405M25 30H405" fill="none" stroke="#d1d8d5"/>
+          <g stroke="#086d70" stroke-width="2" fill="none" marker-end="url(#arrow)"><path d="M130 88V132H215V165"/><path d="M285 195H330V249"/></g>
+          <g fill="#f6f4ee" stroke="#172c35" stroke-width="1.5"><rect x="65" y="35" width="130" height="53" rx="4"/><rect x="145" y="165" width="140" height="60" rx="4"/><rect x="255" y="249" width="155" height="40" rx="4"/></g>
+          <g fill="#172c35" font-family="Georgia, serif" font-size="24" text-anchor="middle"><text x="130" y="69">Role</text><text x="215" y="203">Task</text><text x="333" y="276" font-size="21">Deliverable</text></g>
+          <g fill="#086d70" font-family="Arial, sans-serif" font-size="13"><text x="145" y="119">responsible for</text><text x="339" y="221">produces</text></g>
+          <circle cx="39" cy="262" r="6" fill="#ac6710"/>
+        </svg>
+        <figcaption>A few terms, with their relationships made explicit.<br>An illustration of the idea, rather than a combined ontology.</figcaption>
+      </figure>
+    </section>
+    <section class="catalogue" id="catalogue" aria-labelledby="catalogue-title" tabindex="-1">
+      <div class="catalogue-heading"><h2 id="catalogue-title">Explore the collection</h2><a href="https://github.com/lawrencerowland/Ontologies-for-projects/tree/main/ontologies">Browse all source files ↗</a></div>
+      <p class="collection-note">These are stored copies, including older versions and supporting material. Format labels follow the filenames; descriptions and tags are working notes, not a validation of the files or their suitability for a project.</p>
+      <form class="filters" role="search" onsubmit="return false">
+        <div class="search-field"><label for="filter">Search the collection</label><input type="search" id="filter" placeholder="Try risk, schedule or BFO" autocomplete="off"></div>
+        <div><label for="typeFilter">File format</label><select id="typeFilter"><option value="">All formats</option></select></div>
+        <div><label for="areaFilter">Domain or area</label><select id="areaFilter"><option value="">All areas</option></select></div>
+        <button type="button" id="resetFilters">Clear filters</button>
+      </form>
+      <p class="result-count" id="resultCount" role="status" aria-live="polite">Loading the collection…</p>
+      <noscript><p>The searchable cards need JavaScript. You can still <a href="https://github.com/lawrencerowland/Ontologies-for-projects/tree/main/ontologies">browse all source files on GitHub</a> or <a href="ontologies.json">read the catalogue data</a>.</p></noscript>
+      <div id="cards" class="cards"></div>
+    </section>
+  </main>
+  <footer>
+    <p>Part of Lawrence Rowland’s independent project experiments. A collection to think with; each source retains its own provenance and terms of use.</p>
+    <nav aria-label="Supporting links"><a href="https://lawrencerowland.github.io/library.html">Back to the library</a><a href="ontologies.json">Catalogue data</a><a href="taxonomy.ttl">File-format taxonomy</a><a href="https://github.com/lawrencerowland/Ontologies-for-projects">Repository</a></nav>
+  </footer>
 </body>
 </html>
