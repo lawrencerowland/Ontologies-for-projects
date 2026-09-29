@@ -2,6 +2,28 @@
 3rd party ontologies useful for projects. All ontology files are stored in the
 `ontologies` directory.
 
+Browse the [public catalogue](https://lawrencerowland.github.io/Ontologies-for-projects/)
+or return to the [Library](https://lawrencerowland.github.io/library.html).
+This is a working reference collection: the stored files include older versions,
+saved HTML pages and modelling fragments. Catalogue descriptions are working
+notes, not an ontology validation or a recommendation for production use.
+
+## Catalogue links and checks
+
+The website is served from `docs/`; the source files remain in root `ontologies/`.
+Each card opens the stored file from `raw.githubusercontent.com` and offers a
+separate GitHub source view. Paths are encoded per segment, including spaces and
+punctuation. The browser may display or download the file according to its type.
+Do not use `../ontologies/...` on the website: it escapes the project Pages URL,
+and the root source directory is not part of the published `docs/` folder.
+
+Run `node --test tests/catalogue.test.cjs` to check every catalogue path and file,
+URL construction, search/filter intersections, reset, retained metadata and
+loading failures. The same checks run for pull requests and pushes to `main`.
+These are catalogue checks, not RDF parsing, import resolution or semantic
+validation. The change deliberately preserves all 48 existing records and their
+original source bytes.
+
 ## Website Generation
 
 Run `scripts/generate_index.py` to produce `docs/ontologies.json`. The `docs` directory hosts a simple index that can be served via GitHub Pages.
